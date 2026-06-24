@@ -6,18 +6,18 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   // ─── HAMBURGER MENU ───
-  const hamburger = document.getElementById('hamburger');
-  const nav       = document.getElementById('nav');
-  if (hamburger && nav) {
-    hamburger.addEventListener('click', () => {
-      nav.classList.toggle('open');
-      const bars = hamburger.querySelectorAll('span');
-      const open = nav.classList.contains('open');
-      bars[0].style.transform = open ? 'translateY(7px) rotate(45deg)' : '';
-      bars[1].style.opacity   = open ? '0' : '';
-      bars[2].style.transform = open ? 'translateY(-7px) rotate(-45deg)' : '';
-    });
-  }
+  // const hamburger = document.getElementById('hamburger');
+  // const nav       = document.getElementById('nav');
+  // if (hamburger && nav) {
+  //   hamburger.addEventListener('click', () => {
+  //     nav.classList.toggle('open');
+  //     const bars = hamburger.querySelectorAll('span');
+  //     const open = nav.classList.contains('open');
+  //     bars[0].style.transform = open ? 'translateY(7px) rotate(45deg)' : '';
+  //     bars[1].style.opacity   = open ? '0' : '';
+  //     bars[2].style.transform = open ? 'translateY(-7px) rotate(-45deg)' : '';
+  //   });
+  // }
 
   // ─── FLOATING ENQUIRY ───
   const floatingEnquiry = document.getElementById('floatingEnquiry');
