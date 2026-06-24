@@ -14,18 +14,18 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // ─── HAMBURGER MENU ───
-  const hamburger = document.getElementById('hamburger');
-  const nav = document.getElementById('nav');
-  if (hamburger && nav) {
-    hamburger.addEventListener('click', () => {
-      nav.classList.toggle('open');
-      const bars = hamburger.querySelectorAll('span');
-      const isOpen = nav.classList.contains('open');
-      bars[0].style.transform = isOpen ? 'translateY(7px) rotate(45deg)' : '';
-      bars[1].style.opacity   = isOpen ? '0' : '';
-      bars[2].style.transform = isOpen ? 'translateY(-7px) rotate(-45deg)' : '';
-    });
-  }
+  // const hamburger = document.getElementById('hamburger');
+  // const nav = document.getElementById('nav');
+  // if (hamburger && nav) {
+  //   hamburger.addEventListener('click', () => {
+  //     nav.classList.toggle('open');
+  //     const bars = hamburger.querySelectorAll('span');
+  //     const isOpen = nav.classList.contains('open');
+  //     bars[0].style.transform = isOpen ? 'translateY(7px) rotate(45deg)' : '';
+  //     bars[1].style.opacity   = isOpen ? '0' : '';
+  //     bars[2].style.transform = isOpen ? 'translateY(-7px) rotate(-45deg)' : '';
+  //   });
+  // }
 
   // ─── SCROLL REVEAL ───
   const revealEls = document.querySelectorAll('.reveal-up, .reveal-left, .reveal-right');
