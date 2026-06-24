@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ongoing Projects – Ikon Constructions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="ongoing.css"/>
+</head>
+<body>
+
+  <!-- ══════════════════════ HEADER ══════════════════════ -->
+  <header class="header scrolled" id="header">
+    <div class="header-inner container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Ikon Constructions" class="logo-img"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"/>
+        <div class="logo-fallback" style="display:none;align-items:center;gap:12px;">
+          <div class="logo-text">
+            <span class="logo-main">IKON</span>
+            <span class="logo-sub">CONSTRUCTIONS</span>
+          </div>
+        </div>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="index.html"    class="nav-link">Home</a>
+        <a href="about.html"    class="nav-link">About Us</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <div class="nav-dropdown">
+          <a href="projects.html" class="nav-link active">Projects <span class="caret">▾</span></a>
+          <div class="dropdown-menu">
+            <a href="silver-heights.html">Silver Heights</a>
+            <a href="ongoing-projects.html" style="color:var(--gold);font-weight:700">Ongoing Projects</a>
+            <a href="completed-projects.html">Completed Projects</a>
+          </div>
+        </div>
+        <a href="careers.html"  class="nav-link">Careers</a>
+        <a href="contact.html"  class="nav-link">Contact</a>
+        <a href="contact.html#enquiry" class="btn-enquiry">Enquire Now</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ══════════════════════ PAGE HERO ══════════════════════ -->
+  <section class="og-hero">
+    <div class="og-hero-bg">
+      <img src="images/ongoing-hero.jpg" alt="Ongoing Projects"
+           onerror="this.style.display='none'"/>
+      <div class="og-hero-overlay"></div>
+      <!-- animated build progress lines -->
+      <div class="og-hero-lines">
+        <div class="og-line l1"></div>
+        <div class="og-line l2"></div>
+        <div class="og-line l3"></div>
+      </div>
+    </div>
+    <div class="og-hero-content container">
+      <nav class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="bc-sep">›</span>
+        <a href="projects.html">Projects</a>
+        <span class="bc-sep">›</span>
+        <span>Ongoing Projects</span>
+      </nav>
+      <div class="og-status-badge">
+        <span class="og-live-dot"></span>
+        <span>Currently Under Construction</span>
+      </div>
+      <h1 class="og-hero-title">
+        Projects <em>In Progress</em>
+      </h1>
+      <p class="og-hero-sub">6 active construction projects across Chennai — each one built with the same uncompromising quality, precision, and care that defines Ikon Constructions.</p>
+      <div class="og-hero-stats">
+        <div class="og-stat">
+          <span class="og-stat-num">6</span>
+          <span class="og-stat-label">Active Projects</span>
+        </div>
+        <div class="og-stat-div"></div>
+        <div class="og-stat">
+          <span class="og-stat-num">15,000+</span>
+          <span class="og-stat-label">Sq.Ft Under Build</span>
+        </div>
+        <div class="og-stat-div"></div>
+        <div class="og-stat">
+          <span class="og-stat-num">4</span>
+          <span class="og-stat-label">Locations</span>
+        </div>
+        <div class="og-stat-div"></div>
+        <div class="og-stat">
+          <span class="og-stat-num">100%</span>
+          <span class="og-stat-label">On Schedule</span>
+        </div>
+      </div>
+    </div>
+    <div class="og-scroll-hint">
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════ FILTER BAR ══════════════════════ -->
+  <div class="og-filter-bar">
+    <div class="container og-filter-inner">
+      <span class="og-filter-label">Filter by:</span>
+      <div class="og-filter-btns">
+        <button class="og-filter-btn active" data-filter="all">All Projects</button>
+        <button class="og-filter-btn" data-filter="apartment">Apartment</button>
+        <button class="og-filter-btn" data-filter="duplex">Duplex</button>
+        <button class="og-filter-btn" data-filter="commercial">Commercial</button>
+        <button class="og-filter-btn" data-filter="g2">G+2 & Above</button>
+      </div>
+      <span class="og-count"><span id="visibleCount">6</span> projects</span>
+    </div>
+  </div>
+
+  <!-- ══════════════════════ PROJECTS GRID ══════════════════════ -->
+  <section class="og-projects section-pad">
+    <div class="container">
+      <div class="og-grid" id="ogGrid">
+
+        <!-- ── PROJECT 1: SILVER HEIGHTS ── -->
+        <div class="og-card" data-cat="apartment">
+          <div class="og-card-img-wrap">
+            <img src="images/silver-heights.jpg" alt="Silver Heights"
+                 onerror="this.parentElement.classList.add('og-img-fallback og-fb-1')"/>
+            <div class="og-card-overlay">
+              <span class="og-overlay-icon">🏢</span>
+            </div>
+            <div class="og-type-badge">Apartment</div>
+            <div class="og-flagship-badge">⭐ Flagship</div>
+            <div class="og-progress-wrap">
+              <div class="og-progress-bar" style="--prog:65%"></div>
+              <span class="og-progress-label">65% Complete</span>
+            </div>
+          </div>
+          <div class="og-card-body">
+            <div class="og-card-header">
+              <div>
+                <h3 class="og-project-name">Silver Heights</h3>
+                <p class="og-client-name">Ikon Constructions — Flagship</p>
+              </div>
+              <div class="og-status-chip active">Active</div>
+            </div>
+            <div class="og-card-meta">
+              <div class="og-meta-item">
+                <span class="og-meta-icon">📍</span>
+                <span>Guduvancheri, Chennai</span>
+              </div>
+              <div class="og-meta-item">
+                <span class="og-meta-icon">📐</span>
+                <span>8 Premium Units | 2 & 3 BHK</span>
+              </div>
+              <div class="og-meta-item">
+                <span class="og-meta-icon">🏗️</span>
+                <span>G+3 Floors | Smart Home Ready</span>
+              </div>
+              <div class="og-meta-item">
+                <span class="og-meta-icon">📅</span>
+                <span>Est. Completion: Dec 2025</span>
+              </div>
+            </div>
+            <div class="og-card-specs">
+              <div class="og-spec"><span class="og-spec-label">Area</span><span class="og-spec-val">900–1,400 sq.ft</span></div>
+              <div class="og-spec"><span class="og-spec-label">Price</span><span class="og-spec-val">₹58 L*</span></div>
+              <div class="og-spec"><span class="og-spec-label">Units</span><span class="og-spec-val">8 Only</span></div>
+            </div>
+            <div class="og-card-tags">
+              <span>Smart Home</span><span>Solar Water</span><span>EV Charging</span><span>CCTV</span>
+            </div>
+            <div class="og-card-cta">
+              <a href="silver-heights.html" class="btn-primary gold" style="flex:1;text-align:center">View Details</a>
+              <a href="contact.html#enquiry" class="og-enquire-btn">Enquire</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── PROJECT 2: MR. BALA KUMAR ── -->
+        <div class="og-card" data-cat="g2">
+          <div class="og-card-img-wrap">
+            <img src="images/project-balakumar.jpg" alt="Bala Kumar G+2"
+                 onerror="this.parentElement.classList.add('og-img-fallback og-fb-2')"/>
+            <div class="og-card-overlay">
+              <span class="og-overlay-icon">🏠</span>
+            </div>
+            <div class="og-type-badge">G+2 Residence</div>
+            <div class="og-progress-wrap">
+              <div class="og-progress-bar" style="--prog:40%"></div>
+              <span class="og-progress-label">40% Complete</span>
+            </div>
+          </div>
+          <div class="og-card-body">
+            <div class="og-card-header">
+              <div>
+                <h3 class="og-project-name">Mr. Bala Kumar Residence</h3>
+                <p class="og-client-name">Client: Mr. Bala Kumar</p>
+              </div>
+              <div class="og-status-chip active">Active</div>
+            </div>
+            <div class="og-card-meta">
+              <div class="og-meta-item">
+                <span class="og-meta-icon">📍</span>
+                <span>Tirusulam — Near Chennai Airport</span>
+              </div>
+              <div class="og-meta-item">
+                <span class="og-meta-icon">📐</span>
+                <span>3,000 Sq.Ft | G+2 Construction</span>
+              </div>
+              <div class="og-meta-item">
+                <span class="og-meta-icon">🏗️</span>
+                <span>Premium Individual Residence</span>
+              </div>
+              <div class="og-meta-item">
+                <span class="og-meta-icon">📅</span>
+                <span>Est. Completion: Mar 2026</span>
+              </div>
+            </div>
+            <div class="og-card-specs">
+              <div class="og-spec"><span class="og-spec-label">Area</span><span class="og-spec-val">3,000 sq.ft</span></div>
+              <div class="og-spec"><span class="og-spec-label">Type</span><span class="og-spec-val">G+2</span></div>
+              <div class="og-spec"><span class="og-spec-label">Location</span><span class="og-spec-val">Tirusulam</span></div>
+            </div>
+            <div class="og-card-tags">
+              <span>Individual House</span><span>G+2</span><span>Premium Build</span>
+            </div>
+            <div class="og-card-cta">
+              <a href="contact.html#enquiry" class="btn-primary" style="flex:1;text-align:center">Similar Project?</a>
+              <a href="contact.html#enquiry" class="og-enquire-btn">Enquire</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── PROJECT 3: MR. MADHANA GOPAL ── -->
+        <div class="og-card" data-cat="commercial">
+          <div class="og-card-img-wrap">
+            <img src="images/project-madhangopal.jpg" alt="Commercial Anna Nagar"
+                 onerror="this.parentElement.classList.add('og-img-fallback og-fb-3')"/>
+            <div class="og-card-overlay">
+              <span class="og-overlay-icon">🏗️</span>
+            </div>
+            <div class="og-type-badge">Commercial</div>
+            <div class="og-progress-wrap">
+              <div class="og-progress-bar" style="--prog:30%"></div>
+              <span class="og-progress-label">30% Complete</span>
+            </div>
+          </div>
+          <div class="og-card-body">
+            <div class="og-card-header">
+              <div>
+                <h3 class="og-project-name">Mr. Madhana Gopal</h3>
+                <p class="og-client-name">Client: Mr. Madhana Gopal</p>
+              </div>
+              <div class="og-status-chip active">Active</div>
+            </div>
+            <div class="og-card-meta">
+              <div class="og-meta-item">
+                <span class="og-meta-icon">📍</span>
+                <span>Anna Nagar, Chennai</span>
+              </div>
+              <div class="og-meta-item">
+                <span class="og-meta-icon">📐</span>
+                <span>3,000 Sq.Ft | Commercial Complex</span>
+              </div>
+              <div class="og-meta-item">
+                <span class="og-meta-icon">🏗️</span>
+                <span>Retail + Office Mixed Use</span>
+              </div>
+              <div class="og-meta-item">
+                <span class="og-meta-icon">📅</span>
+                <span>Est. Completion: May 2026</span>
+              </div>
+            </div>
+            <div class="og-card-specs">
+              <div class="og-spec"><span class="og-spec-label">Area</span><span class="og-spec-val">3,000 sq.ft</span></div>
+              <div class="og-spec"><span class="og-spec-label">Type</span><span class="og-spec-val">Commercial</span></div>
+              <div class="og-spec"><span class="og-spec-label">Location</span><span class="og-spec-val">Anna Nagar</span></div>
+            </div>
+            <div class="og-card-tags">
+              <span>Commercial</span><span>Mixed Use</span><span>Retail</span>
+            </div>
+            <div class="og-card-cta">
+              <a href="contact.html#enquiry" class="btn-primary" style="flex:1;text-align:center">Similar Project?</a>
+              <a href="contact.html#enquiry" class="og-enquire-btn">Enquire</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── PROJECT 4: MR. AYUB ── -->
+        <div class="og-card" data-cat="duplex">
+          <div class="og-card-img-wrap">
+            <img src="images/project-ayub.jpg" alt="Mr Ayub Duplex Saidapet"
+                 onerror="this.parentElement.classList.add('og-img-fallback og-fb-4')"/>
+            <div class="og-card-overlay">
+              <span class="og-overlay-icon">🏠</span>
+            </div>
+            <div class="og-type-badge">Duplex</div>
+            <div class="og-progress-wrap">
+              <div class="og-progress-bar" style="--prog:55%"></div>
+              <span class="og-progress-label">55% Complete</span>
+            </div>
+          </div>
+          <div class="og-card-body">
+            <div class="og-card-header">
+              <div>
+                <h3 class="og-project-name">Mr. Ayub Duplex</h3>
+                <p class="og-client-name">Client: Mr. Ayub</p>
+              </div>
+              <div class="og-status-chip active">Active</div>
+            </div>
+            <div class="og-card-meta">
+              <div class="og-meta-item">
+                <span class="og-meta-icon">📍</span>
+                <span>Saidapet, Chennai</span>
+              </div>
+              <div class="og-meta-item">
+                <span class="og-meta-icon">📐</span>
+                <span>2,500 Sq.Ft | Luxury Duplex</span>
+              </div>
+              <div class="og-meta-item">
+                <span class="og-meta-icon">🏗️</span>
+                <span>Duplex with Premium Finishes</span>
+              </div>
+              <div class="og-meta-item">
+                <span class="og-meta-icon">📅</span>
+                <span>Est. Completion: Jan 2026</span>
+              </div>
+            </div>
+            <div class="og-card-specs">
+              <div class="og-spec"><span class="og-spec-label">Area</span><span class="og-spec-val">2,500 sq.ft</span></div>
+              <div class="og-spec"><span class="og-spec-label">Type</span><span class="og-spec-val">Duplex</span></div>
+              <div class="og-spec"><span class="og-spec-label">Location</span><span class="og-spec-val">Saidapet</span></div>
+            </div>
+            <div class="og-card-tags">
+              <span>Duplex</span><span>Luxury Finish</span><span>Smart Home</span>
+            </div>
+            <div class="og-card-cta">
+              <a href="contact.html#enquiry" class="btn-primary" style="flex:1;text-align:center">Similar Project?</a>
+              <a href="contact.html#enquiry" class="og-enquire-btn">Enquire</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── PROJECT 5: MR. VIVEK ── -->
+        <div class="og-card" data-cat="apartment">
+          <div class="og-card-img-wrap">
+            <img src="images/project-vivek.jpg" alt="Mr Vivek Apartment Guduvanchery"
+                 onerror="this.parentElement.classList.add('og-img-fallback og-fb-5')"/>
+            <div class="og-card-overlay">
+              <span class="og-overlay-icon">🏢</span>
+            </div>
+            <div class="og-type-badge">Apartment</div>
+            <div class="og-progress-wrap">
+              <div class="og-progress-bar" style="--prog:20%"></div>
+              <span class="og-progress-label">20% Complete</span>
+            </div>
+          </div>
+          <div class="og-card-body">
+            <div class="og-card-header">
+              <div>
+                <h3 class="og-project-name">Mr. Vivek Apartments</h3>
+                <p class="og-client-name">Client: Mr. Vivek</p>
+              </div>
+              <div class="og-status-chip planning">Planning</div>
+            </div>
+            <div class="og-card-meta">
+              <div class="og-meta-item">
+                <span class="og-meta-icon">📍</span>
+                <span>Guduvanchery, Chennai</span>
+              </div>
+              <div class="og-meta-item">
+                <span class="og-meta-icon">📐</span>
+                <span>6,000 Sq.Ft | Apartment Complex</span>
+              </div>
+              <div class="og-meta-item">
+                <span class="og-meta-icon">🏗️</span>
+                <span>Multi-Unit Premium Apartments</span>
+              </div>
+              <div class="og-meta-item">
+                <span class="og-meta-icon">📅</span>
+                <span>Est. Completion: Aug 2026</span>
+              </div>
+            </div>
+            <div class="og-card-specs">
+              <div class="og-spec"><span class="og-spec-label">Area</span><span class="og-spec-val">6,000 sq.ft</span></div>
+              <div class="og-spec"><span class="og-spec-label">Type</span><span class="og-spec-val">Apartment</span></div>
+              <div class="og-spec"><span class="og-spec-label">Location</span><span class="og-spec-val">Guduvanchery</span></div>
+            </div>
+            <div class="og-card-tags">
+              <span>Apartment</span><span>Multi-Unit</span><span>Premium</span>
+            </div>
+            <div class="og-card-cta">
+              <a href="contact.html#enquiry" class="btn-primary" style="flex:1;text-align:center">Similar Project?</a>
+              <a href="contact.html#enquiry" class="og-enquire-btn">Enquire</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── PROJECT 6: NEW PROJECT ── -->
+        <div class="og-card" data-cat="duplex">
+          <div class="og-card-img-wrap">
+            <img src="images/project-new.jpg" alt="New Project"
+                 onerror="this.parentElement.classList.add('og-img-fallback og-fb-6')"/>
+            <div class="og-card-overlay">
+              <span class="og-overlay-icon">🏡</span>
+            </div>
+            <div class="og-type-badge">Duplex</div>
+            <div class="og-new-badge">New</div>
+            <div class="og-progress-wrap">
+              <div class="og-progress-bar" style="--prog:10%"></div>
+              <span class="og-progress-label">10% Complete</span>
+            </div>
+          </div>
+          <div class="og-card-body">
+            <div class="og-card-header">
+              <div>
+                <h3 class="og-project-name">Upcoming Duplex Project</h3>
+                <p class="og-client-name">Confidential Client</p>
+              </div>
+              <div class="og-status-chip planning">New</div>
+            </div>
+            <div class="og-card-meta">
+              <div class="og-meta-item">
+                <span class="og-meta-icon">📍</span>
+                <span>South Chennai</span>
+              </div>
+              <div class="og-meta-item">
+                <span class="og-meta-icon">📐</span>
+                <span>2,200 Sq.Ft | Premium Duplex</span>
+              </div>
+              <div class="og-meta-item">
+                <span class="og-meta-icon">🏗️</span>
+                <span>Foundation Stage</span>
+              </div>
+              <div class="og-meta-item">
+                <span class="og-meta-icon">📅</span>
+                <span>Est. Completion: Sep 2026</span>
+              </div>
+            </div>
+            <div class="og-card-specs">
+              <div class="og-spec"><span class="og-spec-label">Area</span><span class="og-spec-val">2,200 sq.ft</span></div>
+              <div class="og-spec"><span class="og-spec-label">Type</span><span class="og-spec-val">Duplex</span></div>
+              <div class="og-spec"><span class="og-spec-label">Stage</span><span class="og-spec-val">Foundation</span></div>
+            </div>
+            <div class="og-card-tags">
+              <span>Duplex</span><span>New Launch</span><span>South Chennai</span>
+            </div>
+            <div class="og-card-cta">
+              <a href="contact.html#enquiry" class="btn-primary" style="flex:1;text-align:center">Similar Project?</a>
+              <a href="contact.html#enquiry" class="og-enquire-btn">Enquire</a>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /og-grid -->
+
+      <!-- No results message -->
+      <div class="og-no-results" id="ogNoResults" style="display:none">
+        <div class="og-no-icon">🏗️</div>
+        <h3>No projects found</h3>
+        <p>Try selecting a different filter above.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════ CONSTRUCTION PROGRESS ══════════════════════ -->
+  <section class="og-progress-section section-pad bg-navy">
+    <div class="container">
+      <div class="section-header center white">
+        <p class="section-eyebrow light">Live Progress</p>
+        <h2 class="section-title white">Overall Construction <em>Status</em></h2>
+        <p class="section-desc white">A real-time overview of where each active project stands today — complete transparency for every client.</p>
+      </div>
+      <div class="og-progress-table reveal-up">
+        <div class="opt-header">
+          <span>Project</span>
+          <span>Location</span>
+          <span>Type</span>
+          <span>Size</span>
+          <span>Progress</span>
+          <span>Status</span>
+        </div>
+        <div class="opt-row">
+          <span class="opt-name">Silver Heights</span>
+          <span>Guduvancheri</span>
+          <span>Apartment</span>
+          <span>8 Units</span>
+          <div class="opt-bar-wrap"><div class="opt-bar" style="--p:65%"></div><span>65%</span></div>
+          <span class="opt-status on-track">On Track ✓</span>
+        </div>
+        <div class="opt-row">
+          <span class="opt-name">Mr. Bala Kumar</span>
+          <span>Tirusulam</span>
+          <span>G+2</span>
+          <span>3,000 sq.ft</span>
+          <div class="opt-bar-wrap"><div class="opt-bar" style="--p:40%"></div><span>40%</span></div>
+          <span class="opt-status on-track">On Track ✓</span>
+        </div>
+        <div class="opt-row">
+          <span class="opt-name">Mr. Madhana Gopal</span>
+          <span>Anna Nagar</span>
+          <span>Commercial</span>
+          <span>3,000 sq.ft</span>
+          <div class="opt-bar-wrap"><div class="opt-bar" style="--p:30%"></div><span>30%</span></div>
+          <span class="opt-status on-track">On Track ✓</span>
+        </div>
+        <div class="opt-row">
+          <span class="opt-name">Mr. Ayub</span>
+          <span>Saidapet</span>
+          <span>Duplex</span>
+          <span>2,500 sq.ft</span>
+          <div class="opt-bar-wrap"><div class="opt-bar" style="--p:55%"></div><span>55%</span></div>
+          <span class="opt-status on-track">On Track ✓</span>
+        </div>
+        <div class="opt-row">
+          <span class="opt-name">Mr. Vivek</span>
+          <span>Guduvanchery</span>
+          <span>Apartment</span>
+          <span>6,000 sq.ft</span>
+          <div class="opt-bar-wrap"><div class="opt-bar" style="--p:20%"></div><span>20%</span></div>
+          <span class="opt-status planning">Planning ◎</span>
+        </div>
+        <div class="opt-row">
+          <span class="opt-name">New Duplex Project</span>
+          <span>South Chennai</span>
+          <span>Duplex</span>
+          <span>2,200 sq.ft</span>
+          <div class="opt-bar-wrap"><div class="opt-bar" style="--p:10%"></div><span>10%</span></div>
+          <span class="opt-status planning">New ◉</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════ PROCESS REMINDER ══════════════════════ -->
+  <section class="og-process section-pad bg-light">
+    <div class="container">
+      <div class="section-header center">
+        <p class="section-eyebrow">How We Manage</p>
+        <h2 class="section-title">Our On-Site <em>Process</em></h2>
+        <p class="section-desc">Every active project follows a strict quality management protocol — from daily site supervision to weekly client updates.</p>
+      </div>
+      <div class="og-process-steps reveal-up">
+        <div class="og-proc-step">
+          <div class="og-proc-icon">📋</div>
+          <div class="og-proc-num">01</div>
+          <h4>Daily Site Supervision</h4>
+          <p>Our dedicated site engineers are present daily to monitor quality, safety, and progress at every active project.</p>
+        </div>
+        <div class="og-proc-step">
+          <div class="og-proc-icon">📱</div>
+          <div class="og-proc-num">02</div>
+          <h4>Weekly Client Updates</h4>
+          <p>Every client receives weekly progress photos, reports, and milestone updates — full transparency, always.</p>
+        </div>
+        <div class="og-proc-step">
+          <div class="og-proc-icon">🔍</div>
+          <div class="og-proc-num">03</div>
+          <h4>Quality Checkpoints</h4>
+          <p>Mandatory quality inspections at every structural milestone — foundation, slab, brickwork, plastering, and finishing.</p>
+        </div>
+        <div class="og-proc-step">
+          <div class="og-proc-icon">📅</div>
+          <div class="og-proc-num">04</div>
+          <h4>Schedule Management</h4>
+          <p>Strict timeline adherence using project management tools — every project is planned to deliver on the promised date.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════ START YOUR PROJECT CTA ══════════════════════ -->
+  <section class="og-cta-banner">
+    <div class="og-cta-bg">
+      <img src="images/cta-bg.jpg" alt="" onerror="this.style.display='none'"/>
+      <div class="og-cta-overlay"></div>
+    </div>
+    <div class="og-cta-content container">
+      <p class="section-eyebrow light">Start Today</p>
+      <h2>Want Your Project to Be <em>Next?</em></h2>
+      <p>Join our growing list of happy clients. Whether it's a home, duplex, apartment, or commercial space — Ikon Constructions is ready to build your vision.</p>
+      <div class="og-cta-actions">
+        <a href="contact.html#enquiry" class="btn-primary gold large">Start My Project</a>
+        <a href="completed-projects.html" class="btn-outline-white large">See Completed Work</a>
+        <a href="tel:+917904090365" class="btn-outline-white large">📞 79040 90365</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════ FOOTER ══════════════════════ -->
+  <footer class="footer">
+    <div class="footer-top container">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="images/logo.png" alt="Ikon Constructions" class="footer-logo-img"
+               onerror="this.style.display='none'"/>
+        </div>
+        <p class="footer-tagline">Premium Living. Elevated.<br/>Building Chennai's finest homes since 2020.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-link">IG</a>
+          <a href="#" class="social-link">FB</a>
+          <a href="#" class="social-link">YT</a>
+          <a href="#" class="social-link">WA</a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="careers.html">Careers</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+      <div class="footer-links">
+        <h4>Projects</h4>
+        <a href="silver-heights.html">Silver Heights</a>
+        <a href="ongoing-projects.html">Ongoing Projects</a>
+        <a href="completed-projects.html">Completed Projects</a>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>📞 <a href="tel:+917904090365">79040 90365</a></p>
+        <p>🌐 <a href="http://www.ikonconstructions.com">www.ikonconstructions.com</a></p>
+        <p>📍 Near SRM Public School,<br/>Guduvancheri, Chennai</p>
+        <a href="contact.html#enquiry" class="btn-enquiry-footer">Enquire Now</a>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p>© 2025 Ikon Constructions. All rights reserved. | *T&C apply. Price excludes registration/taxes.</p>
+      <p>Designed with ♥ for premium living</p>
+    </div>
+  </footer>
+
+  <a href="contact.html#enquiry" class="floating-enquiry" id="floatingEnquiry">
+    <span>Enquire Now</span>
+  </a>
+
+  <script src="script.js"></script>
+  <script src="ongoing.js"></script>
+</body>
+</html>

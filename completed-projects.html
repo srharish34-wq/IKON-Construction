@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Completed Projects – Ikon Constructions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="completed.css"/>
+</head>
+<body>
+
+  <!-- ══════════════════════ HEADER ══════════════════════ -->
+  <header class="header scrolled" id="header">
+    <div class="header-inner container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Ikon Constructions" class="logo-img"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"/>
+        <div class="logo-fallback" style="display:none;align-items:center;gap:12px;">
+          <div class="logo-text">
+            <span class="logo-main">IKON</span>
+            <span class="logo-sub">CONSTRUCTIONS</span>
+          </div>
+        </div>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="index.html"    class="nav-link">Home</a>
+        <a href="about.html"    class="nav-link">About Us</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <div class="nav-dropdown">
+          <a href="projects.html" class="nav-link active">Projects <span class="caret">▾</span></a>
+          <div class="dropdown-menu">
+            <a href="silver-heights.html">Silver Heights</a>
+            <a href="ongoing-projects.html">Ongoing Projects</a>
+            <a href="completed-projects.html" style="color:var(--gold);font-weight:700">Completed Projects</a>
+          </div>
+        </div>
+        <a href="careers.html"  class="nav-link">Careers</a>
+        <a href="contact.html"  class="nav-link">Contact</a>
+        <a href="contact.html#enquiry" class="btn-enquiry">Enquire Now</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ══════════════════════ HERO ══════════════════════ -->
+  <section class="cp-hero">
+    <div class="cp-hero-bg">
+      <img src="images/completed-hero.jpg" alt="Completed Projects"
+           onerror="this.style.display='none'"/>
+      <div class="cp-hero-overlay"></div>
+      <!-- Gold confetti dots -->
+      <div class="cp-confetti">
+        <div class="cp-dot d1"></div><div class="cp-dot d2"></div>
+        <div class="cp-dot d3"></div><div class="cp-dot d4"></div>
+        <div class="cp-dot d5"></div><div class="cp-dot d6"></div>
+        <div class="cp-dot d7"></div><div class="cp-dot d8"></div>
+      </div>
+    </div>
+    <div class="cp-hero-content container">
+      <nav class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="bc-sep">›</span>
+        <a href="projects.html">Projects</a>
+        <span class="bc-sep">›</span>
+        <span>Completed Projects</span>
+      </nav>
+      <div class="cp-delivered-badge">
+        <span>✅</span>
+        <span>Successfully Delivered</span>
+      </div>
+      <h1 class="cp-hero-title">
+        Our Completed <em>Masterpieces</em>
+      </h1>
+      <p class="cp-hero-sub">Every project we have delivered is a story of trust, precision, and pride. Explore the homes and spaces we have brought to life for 30+ happy families across Chennai.</p>
+      <div class="cp-hero-stats">
+        <div class="cp-stat">
+          <span class="cp-stat-num" data-target="8">0</span>
+          <span class="cp-stat-label">Projects Shown</span>
+        </div>
+        <div class="cp-stat-div"></div>
+        <div class="cp-stat">
+          <span class="cp-stat-num" data-target="30">0</span><span class="cp-stat-suf">+</span>
+          <span class="cp-stat-label">Happy Clients Total</span>
+        </div>
+        <div class="cp-stat-div"></div>
+        <div class="cp-stat">
+          <span class="cp-stat-num" data-target="25">0</span><span class="cp-stat-suf">K+ sq.ft</span>
+          <span class="cp-stat-label">Area Delivered</span>
+        </div>
+        <div class="cp-stat-div"></div>
+        <div class="cp-stat">
+          <span class="cp-stat-num">5.0</span><span class="cp-stat-suf">★</span>
+          <span class="cp-stat-label">Average Rating</span>
+        </div>
+      </div>
+    </div>
+    <div class="cp-scroll-hint"><div class="scroll-dot"></div></div>
+  </section>
+
+  <!-- ══════════════════════ FILTER BAR ══════════════════════ -->
+  <div class="cp-filter-bar">
+    <div class="container cp-filter-inner">
+      <span class="cp-filter-label">Filter by:</span>
+      <div class="cp-filter-btns">
+        <button class="cp-filter-btn active" data-filter="all">All Projects</button>
+        <button class="cp-filter-btn" data-filter="duplex">Duplex</button>
+        <button class="cp-filter-btn" data-filter="individual">Individual House</button>
+        <button class="cp-filter-btn" data-filter="renovation">Renovation</button>
+        <button class="cp-filter-btn" data-filter="g1">G+1 & Above</button>
+      </div>
+      <span class="cp-count"><span id="cpCount">8</span> projects</span>
+    </div>
+  </div>
+
+  <!-- ══════════════════════ PROJECTS GRID ══════════════════════ -->
+  <section class="cp-projects section-pad">
+    <div class="container">
+      <div class="cp-grid" id="cpGrid">
+
+        <!-- ── 1: MR. JOSEPH ── -->
+        <div class="cp-card" data-cat="duplex">
+          <div class="cp-card-img-wrap">
+            <img src="images/project-joseph.jpg" alt="Mr Joseph Duplex Tirumalisai"
+                 onerror="this.parentElement.classList.add('cp-fb cp-fb-1')"/>
+            <div class="cp-card-overlay">
+              <span class="cp-overlay-icon">🏠</span>
+            </div>
+            <div class="cp-type-badge">Duplex</div>
+            <div class="cp-done-badge">✓ Delivered</div>
+            <div class="cp-rating-strip">
+              <span class="cp-stars">★★★★★</span>
+              <span class="cp-rating-val">5.0</span>
+            </div>
+          </div>
+          <div class="cp-card-body">
+            <div class="cp-card-header">
+              <div>
+                <h3 class="cp-project-name">Mr. Joseph Residence</h3>
+                <p class="cp-client-name">Client: Mr. Joseph</p>
+              </div>
+              <div class="cp-year-chip">2022</div>
+            </div>
+            <div class="cp-card-meta">
+              <div class="cp-meta-item"><span class="cp-meta-icon">📍</span><span>Tirumalisai, Chennai</span></div>
+              <div class="cp-meta-item"><span class="cp-meta-icon">📐</span><span>1,200 Sq.Ft | Duplex</span></div>
+              <div class="cp-meta-item"><span class="cp-meta-icon">🏗️</span><span>Premium Duplex with Modern Elevation</span></div>
+              <div class="cp-meta-item"><span class="cp-meta-icon">⏱️</span><span>Delivered on Time</span></div>
+            </div>
+            <div class="cp-card-specs">
+              <div class="cp-spec"><span class="cp-spec-label">Area</span><span class="cp-spec-val">1,200 sq.ft</span></div>
+              <div class="cp-spec"><span class="cp-spec-label">Type</span><span class="cp-spec-val">Duplex</span></div>
+              <div class="cp-spec"><span class="cp-spec-label">Rating</span><span class="cp-spec-val gold-val">5.0 ★</span></div>
+            </div>
+            <div class="cp-testimonial">
+              <span class="cp-quote-mark">"</span>
+              <p>Ikon Constructions delivered our dream home on time with top-notch quality! Truly exceptional.</p>
+              <span class="cp-testimonial-by">— Mr. Joseph, Tirumalisai</span>
+            </div>
+            <div class="cp-card-tags">
+              <span>Duplex</span><span>Modern Elevation</span><span>Premium Finish</span>
+            </div>
+            <div class="cp-card-cta">
+              <a href="contact.html#enquiry" class="btn-primary" style="flex:1;text-align:center">Build Similar</a>
+              <a href="contact.html#enquiry" class="cp-enquire-btn">Enquire</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── 2: MR. JAI KUMAR ── -->
+        <div class="cp-card" data-cat="duplex">
+          <div class="cp-card-img-wrap">
+            <img src="images/project-jaikumar.jpg" alt="Mr Jai Kumar MM Nagar"
+                 onerror="this.parentElement.classList.add('cp-fb cp-fb-2')"/>
+            <div class="cp-card-overlay"><span class="cp-overlay-icon">🏠</span></div>
+            <div class="cp-type-badge">Duplex</div>
+            <div class="cp-done-badge">✓ Delivered</div>
+            <div class="cp-rating-strip">
+              <span class="cp-stars">★★★★★</span>
+              <span class="cp-rating-val">5.0</span>
+            </div>
+          </div>
+          <div class="cp-card-body">
+            <div class="cp-card-header">
+              <div>
+                <h3 class="cp-project-name">Mr. Jai Kumar Duplex</h3>
+                <p class="cp-client-name">Client: Mr. Jai Kumar</p>
+              </div>
+              <div class="cp-year-chip">2022</div>
+            </div>
+            <div class="cp-card-meta">
+              <div class="cp-meta-item"><span class="cp-meta-icon">📍</span><span>MM Nagar, Chennai</span></div>
+              <div class="cp-meta-item"><span class="cp-meta-icon">📐</span><span>1,000 Sq.Ft | Duplex</span></div>
+              <div class="cp-meta-item"><span class="cp-meta-icon">🏗️</span><span>Contemporary Duplex Design</span></div>
+              <div class="cp-meta-item"><span class="cp-meta-icon">⏱️</span><span>Delivered on Time</span></div>
+            </div>
+            <div class="cp-card-specs">
+              <div class="cp-spec"><span class="cp-spec-label">Area</span><span class="cp-spec-val">1,000 sq.ft</span></div>
+              <div class="cp-spec"><span class="cp-spec-label">Type</span><span class="cp-spec-val">Duplex</span></div>
+              <div class="cp-spec"><span class="cp-spec-label">Rating</span><span class="cp-spec-val gold-val">5.0 ★</span></div>
+            </div>
+            <div class="cp-testimonial">
+              <span class="cp-quote-mark">"</span>
+              <p>Professional, reliable and truly customer-focused. The team executed beyond our expectations.</p>
+              <span class="cp-testimonial-by">— Mr. Jai Kumar, MM Nagar</span>
+            </div>
+            <div class="cp-card-tags">
+              <span>Duplex</span><span>Contemporary</span><span>On-Time</span>
+            </div>
+            <div class="cp-card-cta">
+              <a href="contact.html#enquiry" class="btn-primary" style="flex:1;text-align:center">Build Similar</a>
+              <a href="contact.html#enquiry" class="cp-enquire-btn">Enquire</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── 3: MR. DINESH ── -->
+        <div class="cp-card" data-cat="renovation">
+          <div class="cp-card-img-wrap">
+            <img src="images/project-dinesh.jpg" alt="Mr Dinesh Renovation Maraimalai Nagar"
+                 onerror="this.parentElement.classList.add('cp-fb cp-fb-3')"/>
+            <div class="cp-card-overlay"><span class="cp-overlay-icon">🔨</span></div>
+            <div class="cp-type-badge">Renovation</div>
+            <div class="cp-done-badge">✓ Delivered</div>
+            <div class="cp-rating-strip">
+              <span class="cp-stars">★★★★★</span>
+              <span class="cp-rating-val">5.0</span>
+            </div>
+          </div>
+          <div class="cp-card-body">
+            <div class="cp-card-header">
+              <div>
+                <h3 class="cp-project-name">Mr. Dinesh Renovation</h3>
+                <p class="cp-client-name">Client: Mr. Dinesh</p>
+              </div>
+              <div class="cp-year-chip">2022</div>
+            </div>
+            <div class="cp-card-meta">
+              <div class="cp-meta-item"><span class="cp-meta-icon">📍</span><span>Maraimalai Nagar, Chennai</span></div>
+              <div class="cp-meta-item"><span class="cp-meta-icon">📐</span><span>700 Sq.Ft | Full Renovation</span></div>
+              <div class="cp-meta-item"><span class="cp-meta-icon">🏗️</span><span>Interior & Exterior Refurbishment</span></div>
+              <div class="cp-meta-item"><span class="cp-meta-icon">⏱️</span><span>Completed in 3 Months</span></div>
+            </div>
+            <div class="cp-card-specs">
+              <div class="cp-spec"><span class="cp-spec-label">Area</span><span class="cp-spec-val">700 sq.ft</span></div>
+              <div class="cp-spec"><span class="cp-spec-label">Type</span><span class="cp-spec-val">Renovation</span></div>
+              <div class="cp-spec"><span class="cp-spec-label">Rating</span><span class="cp-spec-val gold-val">5.0 ★</span></div>
+            </div>
+            <div class="cp-testimonial">
+              <span class="cp-quote-mark">"</span>
+              <p>Exceptional craftsmanship and great attention to detail throughout the renovation project.</p>
+              <span class="cp-testimonial-by">— Mr. Dinesh, Maraimalai Nagar</span>
+            </div>
+            <div class="cp-card-tags">
+              <span>Renovation</span><span>Interior</span><span>Exterior</span>
+            </div>
+            <div class="cp-card-cta">
+              <a href="contact.html#enquiry" class="btn-primary" style="flex:1;text-align:center">Build Similar</a>
+              <a href="contact.html#enquiry" class="cp-enquire-btn">Enquire</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── 4: MR. DUTTERAYA ── -->
+        <div class="cp-card" data-cat="duplex">
+          <div class="cp-card-img-wrap">
+            <img src="images/project-dutteraya.jpg" alt="Mr Dutteraya Duplex Aavadi"
+                 onerror="this.parentElement.classList.add('cp-fb cp-fb-4')"/>
+            <div class="cp-card-overlay"><span class="cp-overlay-icon">🏠</span></div>
+            <div class="cp-type-badge">Duplex</div>
+            <div class="cp-done-badge">✓ Delivered</div>
+            <div class="cp-rating-strip">
+              <span class="cp-stars">★★★★★</span>
+              <span class="cp-rating-val">5.0</span>
+            </div>
+          </div>
+          <div class="cp-card-body">
+            <div class="cp-card-header">
+              <div>
+                <h3 class="cp-project-name">Mr. Dutteraya Duplex</h3>
+                <p class="cp-client-name">Client: Mr. Dutteraya</p>
+              </div>
+              <div class="cp-year-chip">2023</div>
+            </div>
+            <div class="cp-card-meta">
+              <div class="cp-meta-item"><span class="cp-meta-icon">📍</span><span>Aavadi, Chennai</span></div>
+              <div class="cp-meta-item"><span class="cp-meta-icon">📐</span><span>1,000 Sq.Ft | Duplex</span></div>
+              <div class="cp-meta-item"><span class="cp-meta-icon">🏗️</span><span>Modern Elevation with Rooftop</span></div>
+              <div class="cp-meta-item"><span class="cp-meta-icon">⏱️</span><span>Delivered on Time</span></div>
+            </div>
+            <div class="cp-card-specs">
+              <div class="cp-spec"><span class="cp-spec-label">Area</span><span class="cp-spec-val">1,000 sq.ft</span></div>
+              <div class="cp-spec"><span class="cp-spec-label">Type</span><span class="cp-spec-val">Duplex</span></div>
+              <div class="cp-spec"><span class="cp-spec-label">Rating</span><span class="cp-spec-val gold-val">5.0 ★</span></div>
+            </div>
+            <div class="cp-testimonial">
+              <span class="cp-quote-mark">"</span>
+              <p>Ikon Constructions built exactly what we dreamed of. No delays, no surprises — just perfection.</p>
+              <span class="cp-testimonial-by">— Mr. Dutteraya, Aavadi</span>
+            </div>
+            <div class="cp-card-tags">
+              <span>Duplex</span><span>Rooftop</span><span>Modern</span>
+            </div>
+            <div class="cp-card-cta">
+              <a href="contact.html#enquiry" class="btn-primary" style="flex:1;text-align:center">Build Similar</a>
+              <a href="contact.html#enquiry" class="cp-enquire-btn">Enquire</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── 5: MR. RAMESH ── -->
+        <div class="cp-card" data-cat="individual">
+          <div class="cp-card-img-wrap">
+            <img src="images/project-ramesh.jpg" alt="Mr Ramesh Individual House"
+                 onerror="this.parentElement.classList.add('cp-fb cp-fb-5')"/>
+            <div class="cp-card-overlay"><span class="cp-overlay-icon">🏡</span></div>
+            <div class="cp-type-badge">Individual House</div>
+            <div class="cp-done-badge">✓ Delivered</div>
+            <div class="cp-rating-strip">
+              <span class="cp-stars">★★★★★</span>
+              <span class="cp-rating-val">5.0</span>
+            </div>
+          </div>
+          <div class="cp-card-body">
+            <div class="cp-card-header">
+              <div>
+                <h3 class="cp-project-name">Mr. Ramesh Residence</h3>
+                <p class="cp-client-name">Client: Mr. Ramesh</p>
+              </div>
+              <div class="cp-year-chip">2023</div>
+            </div>
+            <div class="cp-card-meta">
+              <div class="cp-meta-item"><span class="cp-meta-icon">📍</span><span>Ramanathapuram, Chennai</span></div>
+              <div class="cp-meta-item"><span class="cp-meta-icon">📐</span><span>1,200 Sq.Ft | Individual House</span></div>
+              <div class="cp-meta-item"><span class="cp-meta-icon">🏗️</span><span>G+1 with Premium Interiors</span></div>
+              <div class="cp-meta-item"><span class="cp-meta-icon">⏱️</span><span>Delivered on Time</span></div>
+            </div>
+            <div class="cp-card-specs">
+              <div class="cp-spec"><span class="cp-spec-label">Area</span><span class="cp-spec-val">1,200 sq.ft</span></div>
+              <div class="cp-spec"><span class="cp-spec-label">Type</span><span class="cp-spec-val">Individual</span></div>
+              <div class="cp-spec"><span class="cp-spec-label">Rating</span><span class="cp-spec-val gold-val">5.0 ★</span></div>
+            </div>
+            <div class="cp-testimonial">
+              <span class="cp-quote-mark">"</span>
+              <p>Professional service from start to finish. They managed everything including all approvals seamlessly.</p>
+              <span class="cp-testimonial-by">— Mr. Ramesh, Ramanathapuram</span>
+            </div>
+            <div class="cp-card-tags">
+              <span>Individual House</span><span>G+1</span><span>Premium Interiors</span>
+            </div>
+            <div class="cp-card-cta">
+              <a href="contact.html#enquiry" class="btn-primary" style="flex:1;text-align:center">Build Similar</a>
+              <a href="contact.html#enquiry" class="cp-enquire-btn">Enquire</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── 6: MR. KARTHIK ── -->
+        <div class="cp-card" data-cat="individual">
+          <div class="cp-card-img-wrap">
+            <img src="images/project-karthik.jpg" alt="Mr Karthik Individual House"
+                 onerror="this.parentElement.classList.add('cp-fb cp-fb-6')"/>
+            <div class="cp-card-overlay"><span class="cp-overlay-icon">🏡</span></div>
+            <div class="cp-type-badge">Individual House</div>
+            <div class="cp-done-badge">✓ Delivered</div>
+            <div class="cp-rating-strip">
+              <span class="cp-stars">★★★★★</span>
+              <span class="cp-rating-val">5.0</span>
+            </div>
+          </div>
+          <div class="cp-card-body">
+            <div class="cp-card-header">
+              <div>
+                <h3 class="cp-project-name">Mr. Karthik Residence</h3>
+                <p class="cp-client-name">Client: Mr. Karthik</p>
+              </div>
+              <div class="cp-year-chip">2023</div>
+            </div>
+            <div class="cp-card-meta">
+              <div class="cp-meta-item"><span class="cp-meta-icon">📍</span><span>Kilambakkam, Chennai</span></div>
+              <div class="cp-meta-item"><span class="cp-meta-icon">📐</span><span>750 Sq.Ft | Individual House</span></div>
+              <div class="cp-meta-item"><span class="cp-meta-icon">🏗️</span><span>Compact Premium Design</span></div>
+              <div class="cp-meta-item"><span class="cp-meta-icon">⏱️</span><span>Delivered Ahead of Schedule</span></div>
+            </div>
+            <div class="cp-card-specs">
+              <div class="cp-spec"><span class="cp-spec-label">Area</span><span class="cp-spec-val">750 sq.ft</span></div>
+              <div class="cp-spec"><span class="cp-spec-label">Type</span><span class="cp-spec-val">Individual</span></div>
+              <div class="cp-spec"><span class="cp-spec-label">Rating</span><span class="cp-spec-val gold-val">5.0 ★</span></div>
+            </div>
+            <div class="cp-testimonial">
+              <span class="cp-quote-mark">"</span>
+              <p>Exceptional craftsmanship and great attention to detail throughout. Highly recommend Ikon!</p>
+              <span class="cp-testimonial-by">— Mr. Karthik, Kilambakkam</span>
+            </div>
+            <div class="cp-card-tags">
+              <span>Individual House</span><span>Compact</span><span>Early Delivery</span>
+            </div>
+            <div class="cp-card-cta">
+              <a href="contact.html#enquiry" class="btn-primary" style="flex:1;text-align:center">Build Similar</a>
+              <a href="contact.html#enquiry" class="cp-enquire-btn">Enquire</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── 7: MS. UMA ── -->
+        <div class="cp-card" data-cat="individual">
+          <div class="cp-card-img-wrap">
+            <img src="images/project-uma.jpg" alt="Ms Uma Individual House Kanchipuram"
+                 onerror="this.parentElement.classList.add('cp-fb cp-fb-7')"/>
+            <div class="cp-card-overlay"><span class="cp-overlay-icon">🏡</span></div>
+            <div class="cp-type-badge">Individual House</div>
+            <div class="cp-done-badge">✓ Delivered</div>
+            <div class="cp-rating-strip">
+              <span class="cp-stars">★★★★★</span>
+              <span class="cp-rating-val">5.0</span>
+            </div>
+          </div>
+          <div class="cp-card-body">
+            <div class="cp-card-header">
+              <div>
+                <h3 class="cp-project-name">Ms. Uma Residence</h3>
+                <p class="cp-client-name">Client: Ms. Uma</p>
+              </div>
+              <div class="cp-year-chip">2024</div>
+            </div>
+            <div class="cp-card-meta">
+              <div class="cp-meta-item"><span class="cp-meta-icon">📍</span><span>Kanchipuram, Tamil Nadu</span></div>
+              <div class="cp-meta-item"><span class="cp-meta-icon">📐</span><span>1,400 Sq.Ft | Individual House</span></div>
+              <div class="cp-meta-item"><span class="cp-meta-icon">🏗️</span><span>Traditional Meets Modern Design</span></div>
+              <div class="cp-meta-item"><span class="cp-meta-icon">⏱️</span><span>Delivered on Time</span></div>
+            </div>
+            <div class="cp-card-specs">
+              <div class="cp-spec"><span class="cp-spec-label">Area</span><span class="cp-spec-val">1,400 sq.ft</span></div>
+              <div class="cp-spec"><span class="cp-spec-label">Type</span><span class="cp-spec-val">Individual</span></div>
+              <div class="cp-spec"><span class="cp-spec-label">Rating</span><span class="cp-spec-val gold-val">5.0 ★</span></div>
+            </div>
+            <div class="cp-testimonial">
+              <span class="cp-quote-mark">"</span>
+              <p>They transformed my vision into reality. Every corner of my house reflects their dedication and care.</p>
+              <span class="cp-testimonial-by">— Ms. Uma, Kanchipuram</span>
+            </div>
+            <div class="cp-card-tags">
+              <span>Individual House</span><span>Traditional</span><span>Modern</span>
+            </div>
+            <div class="cp-card-cta">
+              <a href="contact.html#enquiry" class="btn-primary" style="flex:1;text-align:center">Build Similar</a>
+              <a href="contact.html#enquiry" class="cp-enquire-btn">Enquire</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── 8: MR. MANIKANDAN ── -->
+        <div class="cp-card" data-cat="g1">
+          <div class="cp-card-img-wrap">
+            <img src="images/project-manikandan.jpg" alt="Mr Manikandan G+1 Chengalpet"
+                 onerror="this.parentElement.classList.add('cp-fb cp-fb-8')"/>
+            <div class="cp-card-overlay"><span class="cp-overlay-icon">🏠</span></div>
+            <div class="cp-type-badge">G+1</div>
+            <div class="cp-done-badge">✓ Delivered</div>
+            <div class="cp-rating-strip">
+              <span class="cp-stars">★★★★★</span>
+              <span class="cp-rating-val">5.0</span>
+            </div>
+          </div>
+          <div class="cp-card-body">
+            <div class="cp-card-header">
+              <div>
+                <h3 class="cp-project-name">Mr. Manikandan G+1</h3>
+                <p class="cp-client-name">Client: Mr. Manikandan</p>
+              </div>
+              <div class="cp-year-chip">2024</div>
+            </div>
+            <div class="cp-card-meta">
+              <div class="cp-meta-item"><span class="cp-meta-icon">📍</span><span>Chengalpet, Tamil Nadu</span></div>
+              <div class="cp-meta-item"><span class="cp-meta-icon">📐</span><span>1,400 Sq.Ft | G+1 House</span></div>
+              <div class="cp-meta-item"><span class="cp-meta-icon">🏗️</span><span>G+1 with Luxury Interiors</span></div>
+              <div class="cp-meta-item"><span class="cp-meta-icon">⏱️</span><span>Delivered on Time</span></div>
+            </div>
+            <div class="cp-card-specs">
+              <div class="cp-spec"><span class="cp-spec-label">Area</span><span class="cp-spec-val">1,400 sq.ft</span></div>
+              <div class="cp-spec"><span class="cp-spec-label">Type</span><span class="cp-spec-val">G+1</span></div>
+              <div class="cp-spec"><span class="cp-spec-label">Rating</span><span class="cp-spec-val gold-val">5.0 ★</span></div>
+            </div>
+            <div class="cp-testimonial">
+              <span class="cp-quote-mark">"</span>
+              <p>Transparent pricing, zero hidden costs, premium materials — they've set a new benchmark for us.</p>
+              <span class="cp-testimonial-by">— Mr. Manikandan, Chengalpet</span>
+            </div>
+            <div class="cp-card-tags">
+              <span>G+1</span><span>Luxury Interior</span><span>Transparent</span>
+            </div>
+            <div class="cp-card-cta">
+              <a href="contact.html#enquiry" class="btn-primary" style="flex:1;text-align:center">Build Similar</a>
+              <a href="contact.html#enquiry" class="cp-enquire-btn">Enquire</a>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /cp-grid -->
+
+      <div class="cp-no-results" id="cpNoResults" style="display:none">
+        <div class="cp-no-icon">🏡</div>
+        <h3>No projects found</h3>
+        <p>Try a different filter above.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════ ALL TESTIMONIALS STRIP ══════════════════════ -->
+  <section class="cp-testimonials-section section-pad bg-navy">
+    <div class="container">
+      <div class="section-header center white">
+        <p class="section-eyebrow light">Client Love</p>
+        <h2 class="section-title white">What Every Client <em>Says</em></h2>
+        <p class="section-desc white">100% five-star ratings across all completed projects — a record we are incredibly proud of.</p>
+      </div>
+      <div class="cp-tsl-track-wrap">
+        <div class="cp-tsl-track" id="cpTslTrack">
+          <div class="cp-tsl-card">
+            <div class="cp-tsl-stars">★★★★★</div>
+            <p>"Delivered our dream home on time with top-notch quality!"</p>
+            <strong>Mr. Joseph</strong><span>Tirumalisai</span>
+          </div>
+          <div class="cp-tsl-card">
+            <div class="cp-tsl-stars">★★★★★</div>
+            <p>"Professional, reliable, and truly customer-focused — highly recommend!"</p>
+            <strong>Mr. Jai Kumar</strong><span>MM Nagar</span>
+          </div>
+          <div class="cp-tsl-card">
+            <div class="cp-tsl-stars">★★★★★</div>
+            <p>"Exceptional craftsmanship and great attention to detail throughout."</p>
+            <strong>Mr. Dinesh</strong><span>Maraimalai Nagar</span>
+          </div>
+          <div class="cp-tsl-card">
+            <div class="cp-tsl-stars">★★★★★</div>
+            <p>"Ikon built exactly what we dreamed of. No delays, no surprises — just perfection."</p>
+            <strong>Mr. Dutteraya</strong><span>Aavadi</span>
+          </div>
+          <div class="cp-tsl-card">
+            <div class="cp-tsl-stars">★★★★★</div>
+            <p>"They managed everything including all approvals seamlessly. Highly professional."</p>
+            <strong>Mr. Ramesh</strong><span>Ramanathapuram</span>
+          </div>
+          <div class="cp-tsl-card">
+            <div class="cp-tsl-stars">★★★★★</div>
+            <p>"Delivered ahead of schedule. Exceptional work, every corner reflects their care."</p>
+            <strong>Mr. Karthik</strong><span>Kilambakkam</span>
+          </div>
+          <div class="cp-tsl-card">
+            <div class="cp-tsl-stars">★★★★★</div>
+            <p>"They transformed my vision into reality. Dedication shows in every detail."</p>
+            <strong>Ms. Uma</strong><span>Kanchipuram</span>
+          </div>
+          <div class="cp-tsl-card">
+            <div class="cp-tsl-stars">★★★★★</div>
+            <p>"Transparent pricing, zero hidden costs, premium materials. New benchmark set!"</p>
+            <strong>Mr. Manikandan</strong><span>Chengalpet</span>
+          </div>
+        </div>
+      </div>
+      <div class="cp-tsl-dots" id="cpTslDots"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════ ACHIEVEMENT STRIP ══════════════════════ -->
+  <section class="cp-achievements section-pad bg-light">
+    <div class="container">
+      <div class="section-header center">
+        <p class="section-eyebrow">Our Track Record</p>
+        <h2 class="section-title">Every Number Tells a <em>Story</em></h2>
+      </div>
+      <div class="cp-ach-grid reveal-up">
+        <div class="cp-ach-card">
+          <div class="cp-ach-icon">🏆</div>
+          <div class="cp-ach-num ach-counter" data-target="30">0</div><span class="cp-ach-suf">+</span>
+          <div class="cp-ach-label">Projects Completed</div>
+        </div>
+        <div class="cp-ach-card gold-ach">
+          <div class="cp-ach-icon">⭐</div>
+          <div class="cp-ach-num">5.0</div><span class="cp-ach-suf">★</span>
+          <div class="cp-ach-label">Perfect Rating — Every Project</div>
+        </div>
+        <div class="cp-ach-card">
+          <div class="cp-ach-icon">📐</div>
+          <div class="cp-ach-num ach-counter" data-target="25">0</div><span class="cp-ach-suf">K+ sq.ft</span>
+          <div class="cp-ach-label">Total Area Delivered</div>
+        </div>
+        <div class="cp-ach-card">
+          <div class="cp-ach-icon">✅</div>
+          <div class="cp-ach-num">100</div><span class="cp-ach-suf">%</span>
+          <div class="cp-ach-label">On-Time Delivery Rate</div>
+        </div>
+        <div class="cp-ach-card">
+          <div class="cp-ach-icon">📍</div>
+          <div class="cp-ach-num ach-counter" data-target="10">0</div><span class="cp-ach-suf">+</span>
+          <div class="cp-ach-label">Locations Across Chennai</div>
+        </div>
+        <div class="cp-ach-card">
+          <div class="cp-ach-icon">💬</div>
+          <div class="cp-ach-num ach-counter" data-target="30">0</div><span class="cp-ach-suf">+</span>
+          <div class="cp-ach-label">Client Referrals Received</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════ CTA ══════════════════════ -->
+  <section class="cp-cta-banner">
+    <div class="cp-cta-bg">
+      <img src="images/cta-bg.jpg" alt="" onerror="this.style.display='none'"/>
+      <div class="cp-cta-overlay"></div>
+    </div>
+    <div class="cp-cta-content container">
+      <p class="section-eyebrow light">Be Our Next Success Story</p>
+      <h2>Your Dream Home is <em>Next.</em></h2>
+      <p>Join 30+ happy families who trusted Ikon Constructions to build their vision. Let's start your journey today.</p>
+      <div class="cp-cta-actions">
+        <a href="contact.html#enquiry" class="btn-primary gold large">Start My Project</a>
+        <a href="ongoing-projects.html" class="btn-outline-white large">View Ongoing Projects</a>
+        <a href="tel:+917904090365"     class="btn-outline-white large">📞 79040 90365</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════ FOOTER ══════════════════════ -->
+  <footer class="footer">
+    <div class="footer-top container">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="images/logo.png" alt="Ikon Constructions" class="footer-logo-img"
+               onerror="this.style.display='none'"/>
+        </div>
+        <p class="footer-tagline">Premium Living. Elevated.<br/>Building Chennai's finest homes since 2020.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-link">IG</a>
+          <a href="#" class="social-link">FB</a>
+          <a href="#" class="social-link">YT</a>
+          <a href="#" class="social-link">WA</a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="careers.html">Careers</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+      <div class="footer-links">
+        <h4>Projects</h4>
+        <a href="silver-heights.html">Silver Heights</a>
+        <a href="ongoing-projects.html">Ongoing Projects</a>
+        <a href="completed-projects.html">Completed Projects</a>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>📞 <a href="tel:+917904090365">79040 90365</a></p>
+        <p>🌐 <a href="http://www.ikonconstructions.com">www.ikonconstructions.com</a></p>
+        <p>📍 Near SRM Public School,<br/>Guduvancheri, Chennai</p>
+        <a href="contact.html#enquiry" class="btn-enquiry-footer">Enquire Now</a>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p>© 2025 Ikon Constructions. All rights reserved. | *T&C apply.</p>
+      <p>Designed with ♥ for premium living</p>
+    </div>
+  </footer>
+
+  <a href="contact.html#enquiry" class="floating-enquiry" id="floatingEnquiry">
+    <span>Enquire Now</span>
+  </a>
+
+  <script src="script.js"></script>
+  <script src="completed.js"></script>
+</body>
+</html>

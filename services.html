@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services – Ikon Constructions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="services.css"/>
+</head>
+<body>
+
+  <!-- ══════════════════════ HEADER ══════════════════════ -->
+  <header class="header scrolled" id="header">
+    <div class="header-inner container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Ikon Constructions Logo" class="logo-img"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"/>
+        <div class="logo-fallback" style="display:none; align-items:center; gap:12px;">
+          <div class="logo-icon">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+              <rect width="36" height="36" rx="4" fill="#C9A84C"/>
+              <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle"
+                    fill="#0A1931" font-family="Playfair Display" font-weight="900" font-size="18">I</text>
+            </svg>
+          </div>
+          <div class="logo-text">
+            <span class="logo-main">IKON</span>
+            <span class="logo-sub">CONSTRUCTIONS</span>
+          </div>
+        </div>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="index.html"    class="nav-link">Home</a>
+        <a href="about.html"    class="nav-link">About Us</a>
+        <a href="services.html" class="nav-link active">Services</a>
+        <div class="nav-dropdown">
+          <a href="projects.html" class="nav-link">Projects <span class="caret">▾</span></a>
+          <div class="dropdown-menu">
+            <a href="silver-heights.html">Silver Heights</a>
+            <a href="ongoing-projects.html">Ongoing Projects</a>
+            <a href="completed-projects.html">Completed Projects</a>
+          </div>
+        </div>
+        <a href="careers.html"  class="nav-link">Careers</a>
+        <a href="contact.html"  class="nav-link">Contact</a>
+        <a href="contact.html#enquiry" class="btn-enquiry">Enquire Now</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ══════════════════════ PAGE HERO ══════════════════════ -->
+  <section class="srv-hero">
+    <div class="srv-hero-bg">
+      <img src="images/services-hero.jpg" alt="Ikon Constructions Services"
+           onerror="this.style.display='none'"/>
+      <div class="srv-hero-overlay"></div>
+      <div class="srv-hero-pattern"></div>
+    </div>
+    <div class="srv-hero-content container">
+      <nav class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="bc-sep">›</span>
+        <span>Services</span>
+      </nav>
+      <p class="section-eyebrow light">What We Build</p>
+      <h1 class="srv-hero-title">
+        Designing Dreams,<br/><em>Building Realities.</em>
+      </h1>
+      <p class="srv-hero-sub">From your first home to a grand commercial landmark — Ikon Constructions delivers end-to-end construction excellence across every project type, every scale, and every budget.</p>
+      <div class="srv-hero-pills">
+        <a href="#individual"   class="srv-pill">Individual Houses</a>
+        <a href="#apartments"   class="srv-pill">Apartments</a>
+        <a href="#villas"       class="srv-pill">Villas</a>
+        <a href="#commercial"   class="srv-pill">Commercial</a>
+        <a href="#renovation"   class="srv-pill">Renovation</a>
+        <a href="#peb"          class="srv-pill">PEB Construction</a>
+        <a href="#interior"     class="srv-pill">Interior Design</a>
+        <a href="#landscape"    class="srv-pill">Landscape</a>
+      </div>
+    </div>
+    <div class="srv-hero-scroll">
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════ SERVICE OVERVIEW CARDS ══════════════════════ -->
+  <section class="srv-overview section-pad">
+    <div class="container">
+      <div class="section-header center">
+        <p class="section-eyebrow">Our Expertise</p>
+        <h2 class="section-title">Complete Construction <em>Solutions</em></h2>
+        <p class="section-desc">Eight specialist services under one roof — delivered with the same uncompromising quality that has made Ikon Constructions Chennai's most trusted builder.</p>
+      </div>
+      <div class="overview-grid reveal-up">
+        <a href="#individual" class="ov-card">
+          <div class="ov-icon">🏠</div>
+          <h3>Individual Houses</h3>
+          <p>Custom dream homes built to your exact vision and lifestyle</p>
+          <span class="ov-arrow">→</span>
+        </a>
+        <a href="#apartments" class="ov-card">
+          <div class="ov-icon">🏢</div>
+          <h3>Apartments</h3>
+          <p>Premium multi-unit residences with smart amenities</p>
+          <span class="ov-arrow">→</span>
+        </a>
+        <a href="#villas" class="ov-card">
+          <div class="ov-icon">🏡</div>
+          <h3>Villas</h3>
+          <p>Luxurious villas blending opulence with everyday comfort</p>
+          <span class="ov-arrow">→</span>
+        </a>
+        <a href="#commercial" class="ov-card">
+          <div class="ov-icon">🏗️</div>
+          <h3>Commercial Buildings</h3>
+          <p>Office spaces and retail complexes built for performance</p>
+          <span class="ov-arrow">→</span>
+        </a>
+        <a href="#renovation" class="ov-card">
+          <div class="ov-icon">🔨</div>
+          <h3>Renovation</h3>
+          <p>Breathe new life into any space with expert renovation</p>
+          <span class="ov-arrow">→</span>
+        </a>
+        <a href="#peb" class="ov-card">
+          <div class="ov-icon">⚙️</div>
+          <h3>PEB Construction</h3>
+          <p>Pre-engineered structures for speed and cost-efficiency</p>
+          <span class="ov-arrow">→</span>
+        </a>
+        <a href="#interior" class="ov-card">
+          <div class="ov-icon">🎨</div>
+          <h3>Interior Design</h3>
+          <p>Curated interiors that reflect your personality and taste</p>
+          <span class="ov-arrow">→</span>
+        </a>
+        <a href="#landscape" class="ov-card">
+          <div class="ov-icon">🌿</div>
+          <h3>Landscape Design</h3>
+          <p>Beautiful outdoor spaces that complement every structure</p>
+          <span class="ov-arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════ 1. INDIVIDUAL HOUSES ══════════════════════ -->
+  <section class="srv-detail" id="individual">
+    <div class="container srv-detail-grid">
+      <div class="srv-detail-image reveal-left">
+        <img src="images/srv-individual.jpg" alt="Individual House Construction"
+             onerror="this.parentElement.classList.add('srv-img-fallback')"/>
+        <div class="srv-img-badge">
+          <span class="sib-num">750–3000</span>
+          <span class="sib-unit">Sq.Ft Range</span>
+        </div>
+      </div>
+      <div class="srv-detail-content reveal-right">
+        <div class="srv-number">01</div>
+        <p class="section-eyebrow">Our Service</p>
+        <h2 class="section-title">Individual <em>Houses</em></h2>
+        <p class="body-text">Your home is your most personal space — and we treat it that way. Ikon Constructions specialises in building custom individual homes that perfectly balance your vision, lifestyle, budget, and the unique character of your plot.</p>
+        <p class="body-text">From classic traditional designs to bold contemporary architecture, our team handles every detail — ground-up construction, foundation to roof, with premium materials and precision finishing throughout.</p>
+
+        <div class="srv-features">
+          <div class="srv-feat">
+            <div class="sf-icon">✦</div>
+            <div>
+              <strong>Custom Floor Planning</strong>
+              <span>Fully tailored layouts to match your family's needs and future growth</span>
+            </div>
+          </div>
+          <div class="srv-feat">
+            <div class="sf-icon">✦</div>
+            <div>
+              <strong>3D Design Preview</strong>
+              <span>Visualise your home before a single brick is laid — full 3D renders provided</span>
+            </div>
+          </div>
+          <div class="srv-feat">
+            <div class="sf-icon">✦</div>
+            <div>
+              <strong>Smart Home Ready</strong>
+              <span>IoT integration, solar water heaters, and EV charging built in as standard</span>
+            </div>
+          </div>
+          <div class="srv-feat">
+            <div class="sf-icon">✦</div>
+            <div>
+              <strong>Approval Assistance</strong>
+              <span>We handle all CMDA/DTCP approvals, building plans, and legal clearances</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="srv-specs">
+          <div class="spec-item"><span class="spec-label">Starting From</span><span class="spec-val">₹1,800/sq.ft</span></div>
+          <div class="spec-item"><span class="spec-label">Timeline</span><span class="spec-val">8–14 months</span></div>
+          <div class="spec-item"><span class="spec-label">Projects Done</span><span class="spec-val">15+</span></div>
+        </div>
+
+        <div class="srv-cta-row">
+          <a href="contact.html#enquiry" class="btn-primary">Get Free Quote</a>
+          <a href="completed-projects.html" class="btn-outline-navy">View Projects</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════ 2. APARTMENTS ══════════════════════ -->
+  <section class="srv-detail alt-bg" id="apartments">
+    <div class="container srv-detail-grid reverse">
+      <div class="srv-detail-content reveal-left">
+        <div class="srv-number">02</div>
+        <p class="section-eyebrow">Our Service</p>
+        <h2 class="section-title">Luxury <em>Apartments</em></h2>
+        <p class="body-text">Ikon Constructions is redefining apartment living in Chennai. Our premium residential apartments combine innovative architectural design with smart technology, delivering spaces that residents are proud to call home — like our flagship Silver Heights project.</p>
+        <p class="body-text">Every unit is meticulously planned for maximum space efficiency, natural light, ventilation, and seamless integration of modern amenities that elevate daily life.</p>
+
+        <div class="srv-features">
+          <div class="srv-feat">
+            <div class="sf-icon">✦</div>
+            <div>
+              <strong>Smart Home Integration</strong>
+              <span>App-controlled security, automated lighting, and IoT-enabled appliances</span>
+            </div>
+          </div>
+          <div class="srv-feat">
+            <div class="sf-icon">✦</div>
+            <div>
+              <strong>Premium Amenities</strong>
+              <span>Lift, CCTV, covered parking, solar water heater, EV charging, power backup</span>
+            </div>
+          </div>
+          <div class="srv-feat">
+            <div class="sf-icon">✦</div>
+            <div>
+              <strong>RERA Compliant</strong>
+              <span>Full transparency, legal protection, and regulatory compliance guaranteed</span>
+            </div>
+          </div>
+          <div class="srv-feat">
+            <div class="sf-icon">✦</div>
+            <div>
+              <strong>Investment Value</strong>
+              <span>Strategically located projects with high appreciation and rental potential</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="srv-specs">
+          <div class="spec-item"><span class="spec-label">Starting From</span><span class="spec-val">₹58 Lakhs*</span></div>
+          <div class="spec-item"><span class="spec-label">Configuration</span><span class="spec-val">2BHK & 3BHK</span></div>
+          <div class="spec-item"><span class="spec-label">Flagship</span><span class="spec-val">Silver Heights</span></div>
+        </div>
+
+        <div class="srv-cta-row">
+          <a href="silver-heights.html" class="btn-primary gold">View Silver Heights</a>
+          <a href="contact.html#enquiry" class="btn-outline-navy">Enquire Now</a>
+        </div>
+      </div>
+      <div class="srv-detail-image reveal-right">
+        <img src="images/silver-heights.jpg" alt="Luxury Apartments – Silver Heights"
+             onerror="this.parentElement.classList.add('srv-img-fallback')"/>
+        <div class="srv-img-badge gold-badge">
+          <span class="sib-num">8</span>
+          <span class="sib-unit">Premium<br/>Units</span>
+        </div>
+        <!-- Silver Heights sub-features -->
+        <div class="apt-feature-chips">
+          <span>Smart Home</span>
+          <span>Solar Water</span>
+          <span>EV Charging</span>
+          <span>CCTV</span>
+          <span>Power Backup</span>
+          <span>Lift</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════ 3. VILLAS ══════════════════════ -->
+  <section class="srv-detail" id="villas">
+    <div class="container srv-detail-grid">
+      <div class="srv-detail-image reveal-left">
+        <img src="images/srv-villa.jpg" alt="Villa Construction"
+             onerror="this.parentElement.classList.add('srv-img-fallback')"/>
+        <div class="srv-img-badge">
+          <span class="sib-num">2000+</span>
+          <span class="sib-unit">Sq.Ft</span>
+        </div>
+      </div>
+      <div class="srv-detail-content reveal-right">
+        <div class="srv-number">03</div>
+        <p class="section-eyebrow">Our Service</p>
+        <h2 class="section-title">Luxury <em>Villas</em></h2>
+        <p class="body-text">For those who desire the pinnacle of residential living, Ikon Constructions crafts bespoke villas that are a statement of elegance, privacy, and architectural brilliance. Each villa is a unique masterpiece — a home that reflects the taste and stature of its owner.</p>
+        <p class="body-text">From the grand facade to the finest interior finish, every element is crafted with obsessive attention to detail — delivered on schedule and built to last generations.</p>
+
+        <div class="srv-features">
+          <div class="srv-feat">
+            <div class="sf-icon">✦</div>
+            <div><strong>Bespoke Architecture</strong><span>Fully custom designs — no templates, no compromises</span></div>
+          </div>
+          <div class="srv-feat">
+            <div class="sf-icon">✦</div>
+            <div><strong>Premium Materials</strong><span>Imported tiles, hardwood, stone cladding, and luxury fittings</span></div>
+          </div>
+          <div class="srv-feat">
+            <div class="sf-icon">✦</div>
+            <div><strong>Private Amenities</strong><span>Swimming pools, home theatres, rooftop gardens — on request</span></div>
+          </div>
+          <div class="srv-feat">
+            <div class="sf-icon">✦</div>
+            <div><strong>Landscape Included</strong><span>Full exterior landscaping and garden design as part of the project</span></div>
+          </div>
+        </div>
+
+        <div class="srv-specs">
+          <div class="spec-item"><span class="spec-label">Starting From</span><span class="spec-val">₹2,200/sq.ft</span></div>
+          <div class="spec-item"><span class="spec-label">Timeline</span><span class="spec-val">12–24 months</span></div>
+          <div class="spec-item"><span class="spec-label">Size Range</span><span class="spec-val">2,000–6,000 sq.ft</span></div>
+        </div>
+
+        <div class="srv-cta-row">
+          <a href="contact.html#enquiry" class="btn-primary">Discuss Your Villa</a>
+          <a href="completed-projects.html" class="btn-outline-navy">Our Work</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════ 4. COMMERCIAL BUILDINGS ══════════════════════ -->
+  <section class="srv-detail alt-bg" id="commercial">
+    <div class="container srv-detail-grid reverse">
+      <div class="srv-detail-content reveal-left">
+        <div class="srv-number">04</div>
+        <p class="section-eyebrow">Our Service</p>
+        <h2 class="section-title">Commercial <em>Buildings</em></h2>
+        <p class="body-text">Ikon Constructions brings the same precision and quality standards that define our residential work to every commercial project — offices, retail spaces, showrooms, warehouses, and mixed-use complexes.</p>
+        <p class="body-text">We understand that commercial spaces must perform — for your business, your customers, and your team. Our designs maximise functionality, minimise operational costs, and create spaces that leave a lasting impression.</p>
+
+        <div class="srv-features">
+          <div class="srv-feat">
+            <div class="sf-icon">✦</div>
+            <div><strong>Office Complexes</strong><span>Modern workspaces designed for productivity, collaboration, and brand identity</span></div>
+          </div>
+          <div class="srv-feat">
+            <div class="sf-icon">✦</div>
+            <div><strong>Retail & Showrooms</strong><span>Customer-first layouts with high footfall flow design and premium finishes</span></div>
+          </div>
+          <div class="srv-feat">
+            <div class="sf-icon">✦</div>
+            <div><strong>Warehouses & Factories</strong><span>Industrial-grade construction with safety compliance and efficiency in mind</span></div>
+          </div>
+          <div class="srv-feat">
+            <div class="sf-icon">✦</div>
+            <div><strong>Mixed-Use Developments</strong><span>Complex multi-purpose buildings combining residential, retail, and office spaces</span></div>
+          </div>
+        </div>
+
+        <div class="srv-specs">
+          <div class="spec-item"><span class="spec-label">Starting From</span><span class="spec-val">₹1,600/sq.ft</span></div>
+          <div class="spec-item"><span class="spec-label">Min. Project</span><span class="spec-val">2,000 sq.ft</span></div>
+          <div class="spec-item"><span class="spec-label">Timeline</span><span class="spec-val">10–18 months</span></div>
+        </div>
+
+        <div class="srv-cta-row">
+          <a href="contact.html#enquiry" class="btn-primary">Start Your Project</a>
+          <a href="ongoing-projects.html" class="btn-outline-navy">Ongoing Work</a>
+        </div>
+      </div>
+      <div class="srv-detail-image reveal-right">
+        <img src="images/srv-commercial.jpg" alt="Commercial Buildings"
+             onerror="this.parentElement.classList.add('srv-img-fallback')"/>
+        <div class="srv-img-badge">
+          <span class="sib-num">3000+</span>
+          <span class="sib-unit">Sq.Ft Projects</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════ 5. RENOVATION ══════════════════════ -->
+  <section class="srv-detail" id="renovation">
+    <div class="container srv-detail-grid">
+      <div class="srv-detail-image reveal-left">
+        <div class="renovation-before-after">
+          <div class="ba-panel before-panel">
+            <img src="images/srv-reno-before.jpg" alt="Before Renovation"
+                 onerror="this.parentElement.style.background='linear-gradient(135deg,#555,#333)'"/>
+            <span class="ba-label">Before</span>
+          </div>
+          <div class="ba-divider">
+            <div class="ba-handle">⟺</div>
+          </div>
+          <div class="ba-panel after-panel">
+            <img src="images/srv-reno-after.jpg" alt="After Renovation"
+                 onerror="this.parentElement.style.background='linear-gradient(135deg,#0A1931,#1a3a6e)'"/>
+            <span class="ba-label gold-label">After</span>
+          </div>
+        </div>
+      </div>
+      <div class="srv-detail-content reveal-right">
+        <div class="srv-number">05</div>
+        <p class="section-eyebrow">Our Service</p>
+        <h2 class="section-title">Renovation & <em>Refurbishment</em></h2>
+        <p class="body-text">Give your existing space a complete new identity. Whether it's a decade-old home that needs structural upgrades, a commercial space that needs a modern refresh, or a partial room redesign — Ikon Constructions delivers flawless renovation work.</p>
+        <p class="body-text">We approach every renovation with the same design rigour and material standards as our new builds — because you deserve nothing less, regardless of project size.</p>
+
+        <div class="srv-features">
+          <div class="srv-feat">
+            <div class="sf-icon">✦</div>
+            <div><strong>Full Home Renovation</strong><span>Complete structural and cosmetic overhaul of existing homes</span></div>
+          </div>
+          <div class="srv-feat">
+            <div class="sf-icon">✦</div>
+            <div><strong>Partial Room Makeovers</strong><span>Kitchen, bathroom, bedroom, or living room redesigns</span></div>
+          </div>
+          <div class="srv-feat">
+            <div class="sf-icon">✦</div>
+            <div><strong>Structural Repairs</strong><span>Foundation fixes, waterproofing, crack repair, and terrace treatments</span></div>
+          </div>
+          <div class="srv-feat">
+            <div class="sf-icon">✦</div>
+            <div><strong>Commercial Refurbishment</strong><span>Office and retail space modernisation with minimal downtime</span></div>
+          </div>
+        </div>
+
+        <div class="srv-specs">
+          <div class="spec-item"><span class="spec-label">Starting From</span><span class="spec-val">₹800/sq.ft</span></div>
+          <div class="spec-item"><span class="spec-label">Timeline</span><span class="spec-val">2–6 months</span></div>
+          <div class="spec-item"><span class="spec-label">Min. Project</span><span class="spec-val">500 sq.ft</span></div>
+        </div>
+
+        <div class="srv-cta-row">
+          <a href="contact.html#enquiry" class="btn-primary">Book Inspection</a>
+          <a href="completed-projects.html" class="btn-outline-navy">Renovation Work</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════ 6. PEB CONSTRUCTION ══════════════════════ -->
+  <section class="srv-detail alt-bg" id="peb">
+    <div class="container srv-detail-grid reverse">
+      <div class="srv-detail-content reveal-left">
+        <div class="srv-number">06</div>
+        <p class="section-eyebrow">Our Service</p>
+        <h2 class="section-title">PEB <em>Construction</em></h2>
+        <p class="body-text">Pre-Engineered Buildings (PEB) represent the future of fast, cost-effective, high-quality construction. Ikon Constructions' PEB systems are fabricated off-site to precision specifications, then assembled on-location — slashing construction time and cost without sacrificing quality.</p>
+        <p class="body-text">With lightweight steel structures and modern cladding solutions, our PEB projects meet international standards for structural safety, energy efficiency, and long-term durability.</p>
+
+        <div class="peb-advantages">
+          <div class="peb-adv">
+            <div class="peb-adv-icon">⚡</div>
+            <div class="peb-adv-content">
+              <strong>60% Faster</strong>
+              <span>vs. traditional construction</span>
+            </div>
+          </div>
+          <div class="peb-adv">
+            <div class="peb-adv-icon">💰</div>
+            <div class="peb-adv-content">
+              <strong>30% Lower Cost</strong>
+              <span>without quality compromise</span>
+            </div>
+          </div>
+          <div class="peb-adv">
+            <div class="peb-adv-icon">♻️</div>
+            <div class="peb-adv-content">
+              <strong>Eco-Friendly</strong>
+              <span>recyclable steel, minimal waste</span>
+            </div>
+          </div>
+          <div class="peb-adv">
+            <div class="peb-adv-icon">🌍</div>
+            <div class="peb-adv-content">
+              <strong>International Standards</strong>
+              <span>IS & AISC code compliant</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="srv-features" style="margin-top:24px">
+          <div class="srv-feat">
+            <div class="sf-icon">✦</div>
+            <div><strong>Factories & Warehouses</strong><span>Large-span industrial structures with high load-bearing capacity</span></div>
+          </div>
+          <div class="srv-feat">
+            <div class="sf-icon">✦</div>
+            <div><strong>Aircraft Hangars</strong><span>Wide-span, column-free interior spaces for aviation and logistics</span></div>
+          </div>
+          <div class="srv-feat">
+            <div class="sf-icon">✦</div>
+            <div><strong>Sports & Community Halls</strong><span>Large open-span structures for gyms, auditoriums, and community centres</span></div>
+          </div>
+        </div>
+
+        <div class="srv-cta-row">
+          <a href="contact.html#enquiry" class="btn-primary">Get PEB Quote</a>
+          <a href="contact.html" class="btn-outline-navy">Talk to Expert</a>
+        </div>
+      </div>
+      <div class="srv-detail-image reveal-right">
+        <img src="images/srv-peb.jpg" alt="PEB Construction"
+             onerror="this.parentElement.classList.add('srv-img-fallback peb-fallback')"/>
+        <div class="peb-stats-overlay">
+          <div class="peb-stat-item">
+            <span class="peb-stat-num">60%</span>
+            <span class="peb-stat-label">Faster Build</span>
+          </div>
+          <div class="peb-stat-item">
+            <span class="peb-stat-num">30%</span>
+            <span class="peb-stat-label">Cost Saving</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════ 7. INTERIOR DESIGN ══════════════════════ -->
+  <section class="srv-detail" id="interior">
+    <div class="container srv-detail-grid">
+      <div class="srv-detail-image reveal-left">
+        <img src="images/srv-interior.jpg" alt="Interior Design"
+             onerror="this.parentElement.classList.add('srv-img-fallback interior-fallback')"/>
+        <div class="interior-style-tags">
+          <span>Modern</span>
+          <span>Contemporary</span>
+          <span>Classic</span>
+          <span>Minimalist</span>
+          <span>Luxury</span>
+        </div>
+      </div>
+      <div class="srv-detail-content reveal-right">
+        <div class="srv-number">07</div>
+        <p class="section-eyebrow">Our Service</p>
+        <h2 class="section-title">Interior <em>Design</em></h2>
+        <p class="body-text">Great architecture deserves great interiors. Ikon Constructions' interior design team transforms spaces into personalized works of art — blending your aesthetic preferences with practical functionality to create interiors that feel as good as they look.</p>
+        <p class="body-text">We offer turnkey interior solutions — from concept and material selection to execution and styling — across all budget ranges, always delivering a premium result.</p>
+
+        <div class="interior-themes">
+          <div class="theme-card active" data-theme="modern">
+            <span class="theme-dot"></span>Modern
+          </div>
+          <div class="theme-card" data-theme="classic">
+            <span class="theme-dot"></span>Classic
+          </div>
+          <div class="theme-card" data-theme="minimalist">
+            <span class="theme-dot"></span>Minimalist
+          </div>
+          <div class="theme-card" data-theme="luxury">
+            <span class="theme-dot"></span>Luxury
+          </div>
+        </div>
+
+        <div class="srv-features">
+          <div class="srv-feat">
+            <div class="sf-icon">✦</div>
+            <div><strong>Living & Dining Rooms</strong><span>Statement spaces designed for comfort, hosting, and everyday life</span></div>
+          </div>
+          <div class="srv-feat">
+            <div class="sf-icon">✦</div>
+            <div><strong>Modular Kitchens</strong><span>Functional, beautiful kitchens with premium fittings and smart storage</span></div>
+          </div>
+          <div class="srv-feat">
+            <div class="sf-icon">✦</div>
+            <div><strong>Bedrooms & Wardrobes</strong><span>Serene, personalised bedrooms with custom wardrobe solutions</span></div>
+          </div>
+          <div class="srv-feat">
+            <div class="sf-icon">✦</div>
+            <div><strong>Bathrooms</strong><span>Spa-like bathrooms with premium sanitary ware and tile designs</span></div>
+          </div>
+        </div>
+
+        <div class="srv-specs">
+          <div class="spec-item"><span class="spec-label">Starting From</span><span class="spec-val">₹600/sq.ft</span></div>
+          <div class="spec-item"><span class="spec-label">Timeline</span><span class="spec-val">6–12 weeks</span></div>
+          <div class="spec-item"><span class="spec-label">Style Options</span><span class="spec-val">5+ Themes</span></div>
+        </div>
+
+        <div class="srv-cta-row">
+          <a href="contact.html#enquiry" class="btn-primary">Design Consultation</a>
+          <a href="completed-projects.html" class="btn-outline-navy">View Interiors</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════ 8. LANDSCAPE DESIGN ══════════════════════ -->
+  <section class="srv-detail alt-bg" id="landscape">
+    <div class="container srv-detail-grid reverse">
+      <div class="srv-detail-content reveal-left">
+        <div class="srv-number">08</div>
+        <p class="section-eyebrow">Our Service</p>
+        <h2 class="section-title">Landscape <em>Design</em></h2>
+        <p class="body-text">The space outside your home is just as important as the space inside. Ikon Constructions' landscape design team creates stunning outdoor environments — gardens, pathways, water features, seating areas, and green walls — that complement your home's architecture and lifestyle.</p>
+        <p class="body-text">From a compact courtyard to an expansive villa garden, we design and execute outdoor spaces that bring nature, beauty, and tranquility to your property.</p>
+
+        <div class="landscape-features-grid">
+          <div class="lf-item">
+            <span class="lf-icon">🌳</span>
+            <span>Garden Planning</span>
+          </div>
+          <div class="lf-item">
+            <span class="lf-icon">💧</span>
+            <span>Water Features</span>
+          </div>
+          <div class="lf-item">
+            <span class="lf-icon">🪨</span>
+            <span>Stone Pathways</span>
+          </div>
+          <div class="lf-item">
+            <span class="lf-icon">💡</span>
+            <span>Outdoor Lighting</span>
+          </div>
+          <div class="lf-item">
+            <span class="lf-icon">🌿</span>
+            <span>Vertical Gardens</span>
+          </div>
+          <div class="lf-item">
+            <span class="lf-icon">🌺</span>
+            <span>Floral Landscapes</span>
+          </div>
+          <div class="lf-item">
+            <span class="lf-icon">🪵</span>
+            <span>Wooden Decks</span>
+          </div>
+          <div class="lf-item">
+            <span class="lf-icon">🏊</span>
+            <span>Pool Surrounds</span>
+          </div>
+        </div>
+
+        <div class="srv-specs" style="margin-top:28px">
+          <div class="spec-item"><span class="spec-label">Starting From</span><span class="spec-val">₹250/sq.ft</span></div>
+          <div class="spec-item"><span class="spec-label">Timeline</span><span class="spec-val">4–8 weeks</span></div>
+        </div>
+
+        <div class="srv-cta-row">
+          <a href="contact.html#enquiry" class="btn-primary">Plan My Landscape</a>
+          <a href="contact.html" class="btn-outline-navy">Speak to Designer</a>
+        </div>
+      </div>
+      <div class="srv-detail-image reveal-right">
+        <img src="images/srv-landscape.jpg" alt="Landscape Design"
+             onerror="this.parentElement.classList.add('srv-img-fallback landscape-fallback')"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════ OUR PROCESS ══════════════════════ -->
+  <section class="srv-process section-pad bg-navy">
+    <div class="container">
+      <div class="section-header center white">
+        <p class="section-eyebrow light">How We Work</p>
+        <h2 class="section-title white">Our Construction <em>Process</em></h2>
+        <p class="section-desc white">Every Ikon project follows a proven 6-step process that ensures quality, transparency, and on-time delivery — from your first call to key handover.</p>
+      </div>
+      <div class="process-flow reveal-up">
+        <div class="pf-step">
+          <div class="pf-icon-wrap">
+            <span class="pf-icon">💬</span>
+            <div class="pf-connector"></div>
+          </div>
+          <div class="pf-step-num">Step 01</div>
+          <h4>Initial Consultation</h4>
+          <p>We listen to your vision, understand your requirements, budget, and site conditions in a detailed free consultation.</p>
+        </div>
+        <div class="pf-step">
+          <div class="pf-icon-wrap">
+            <span class="pf-icon">📐</span>
+            <div class="pf-connector"></div>
+          </div>
+          <div class="pf-step-num">Step 02</div>
+          <h4>Design & Planning</h4>
+          <p>Our architects create detailed blueprints, 3D renders, structural designs, and a transparent cost estimate.</p>
+        </div>
+        <div class="pf-step">
+          <div class="pf-icon-wrap">
+            <span class="pf-icon">📋</span>
+            <div class="pf-connector"></div>
+          </div>
+          <div class="pf-step-num">Step 03</div>
+          <h4>Approvals & Agreement</h4>
+          <p>We handle all government approvals, RERA registration, legal documentation, and sign a transparent contract.</p>
+        </div>
+        <div class="pf-step">
+          <div class="pf-icon-wrap">
+            <span class="pf-icon">🏗️</span>
+            <div class="pf-connector"></div>
+          </div>
+          <div class="pf-step-num">Step 04</div>
+          <h4>Construction Phase</h4>
+          <p>Skilled teams execute each phase with quality-controlled materials, regular site inspections, and client updates.</p>
+        </div>
+        <div class="pf-step">
+          <div class="pf-icon-wrap">
+            <span class="pf-icon">🔍</span>
+            <div class="pf-connector"></div>
+          </div>
+          <div class="pf-step-num">Step 05</div>
+          <h4>Quality Inspection</h4>
+          <p>Independent structural audits, snag list reviews, and final quality checks before any handover.</p>
+        </div>
+        <div class="pf-step">
+          <div class="pf-icon-wrap">
+            <span class="pf-icon">🗝️</span>
+            <div class="pf-connector no-line"></div>
+          </div>
+          <div class="pf-step-num">Step 06</div>
+          <h4>Key Handover</h4>
+          <p>A proud moment — we hand you the keys to your dream space with all documentation and warranty in place.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════ WHY CHOOSE IKON FOR SERVICES ══════════════════════ -->
+  <section class="srv-why section-pad">
+    <div class="container">
+      <div class="section-header center">
+        <p class="section-eyebrow">Our Promise</p>
+        <h2 class="section-title">The Ikon <em>Guarantee</em></h2>
+        <p class="section-desc">Every service we offer comes with our unwavering commitment to quality, transparency, and your complete satisfaction.</p>
+      </div>
+      <div class="srv-why-grid reveal-up">
+        <div class="sw-card">
+          <div class="sw-icon">🏆</div>
+          <h4>Premium Materials Only</h4>
+          <p>ISI-marked cement, TMT steel, branded tiles and fittings — no compromise on what goes into your project.</p>
+        </div>
+        <div class="sw-card">
+          <div class="sw-icon">📅</div>
+          <h4>On-Time Delivery</h4>
+          <p>We have a 100% track record of delivering within agreed timelines — backed by a contractual commitment.</p>
+        </div>
+        <div class="sw-card">
+          <div class="sw-icon">💸</div>
+          <h4>No Hidden Costs</h4>
+          <p>Complete cost transparency from day one. What we quote is what you pay — no surprise additions mid-project.</p>
+        </div>
+        <div class="sw-card">
+          <div class="sw-icon">🛡️</div>
+          <h4>10-Year Structural Warranty</h4>
+          <p>We stand behind our work. Every project comes with a 10-year structural warranty and 1-year finishing warranty.</p>
+        </div>
+        <div class="sw-card">
+          <div class="sw-icon">📞</div>
+          <h4>24/7 Support</h4>
+          <p>Our team is reachable around the clock during your project — and our after-sales support continues post-handover.</p>
+        </div>
+        <div class="sw-card">
+          <div class="sw-icon">⭐</div>
+          <h4>5-Star Client Satisfaction</h4>
+          <p>30+ happy clients, zero unsatisfied customers — our reputation is built one perfect project at a time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════ PRICING PACKAGES ══════════════════════ -->
+  <section class="pricing-section section-pad bg-light">
+    <div class="container">
+      <div class="section-header center">
+        <p class="section-eyebrow">Pricing</p>
+        <h2 class="section-title">Transparent <em>Packages</em></h2>
+        <p class="section-desc">Choose the right construction package for your project. All packages include plan approval assistance, site supervision, and post-handover support.</p>
+      </div>
+      <div class="pricing-grid reveal-up">
+        <div class="price-card">
+          <div class="price-tier">Essential</div>
+          <div class="price-amt">₹1,800<span>/sq.ft</span></div>
+          <div class="price-desc">Perfect for budget-conscious builds without compromising on structural integrity.</div>
+          <ul class="price-features">
+            <li>✓ Structural construction</li>
+            <li>✓ Standard grade materials</li>
+            <li>✓ Basic electrical & plumbing</li>
+            <li>✓ Cement plastering & painting</li>
+            <li>✓ CMDA plan approval</li>
+            <li>✓ Site engineer supervision</li>
+            <li class="inactive">✗ Smart home features</li>
+            <li class="inactive">✗ Premium fittings</li>
+          </ul>
+          <a href="contact.html#enquiry" class="btn-outline-navy" style="text-align:center;display:block">Get Quote</a>
+        </div>
+
+        <div class="price-card featured-price">
+          <div class="price-popular">Most Popular</div>
+          <div class="price-tier">Premium</div>
+          <div class="price-amt">₹2,200<span>/sq.ft</span></div>
+          <div class="price-desc">The ideal balance of quality, technology, and premium finishes for modern homes.</div>
+          <ul class="price-features">
+            <li>✓ Everything in Essential</li>
+            <li>✓ Premium grade materials</li>
+            <li>✓ Smart home integration</li>
+            <li>✓ Solar water heater</li>
+            <li>✓ EV charging point</li>
+            <li>✓ Premium tiles & fittings</li>
+            <li>✓ 3D design preview</li>
+            <li>✓ Interior consultation</li>
+          </ul>
+          <a href="contact.html#enquiry" class="btn-primary" style="text-align:center;display:block">Get Quote</a>
+        </div>
+
+        <div class="price-card">
+          <div class="price-tier">Luxury</div>
+          <div class="price-amt">₹3,000+<span>/sq.ft</span></div>
+          <div class="price-desc">The ultimate in bespoke construction — no limits on design, materials, or amenities.</div>
+          <ul class="price-features">
+            <li>✓ Everything in Premium</li>
+            <li>✓ Imported materials & fittings</li>
+            <li>✓ Full interior design</li>
+            <li>✓ Landscape design</li>
+            <li>✓ Private pool (on request)</li>
+            <li>✓ Home theatre wiring</li>
+            <li>✓ Dedicated project manager</li>
+            <li>✓ 10-yr structural warranty</li>
+          </ul>
+          <a href="contact.html#enquiry" class="btn-outline-navy" style="text-align:center;display:block">Get Quote</a>
+        </div>
+      </div>
+      <p class="pricing-note">* Prices are indicative. Final quotes depend on site conditions, design complexity, material selection, and location. Contact us for a free detailed estimate.</p>
+    </div>
+  </section>
+
+  <!-- ══════════════════════ CTA ══════════════════════ -->
+  <section class="srv-cta-banner">
+    <div class="srv-cta-bg">
+      <img src="images/cta-bg.jpg" alt="" onerror="this.style.display='none'"/>
+      <div class="srv-cta-overlay"></div>
+    </div>
+    <div class="srv-cta-content container">
+      <h2>Ready to Build Something <em>Extraordinary?</em></h2>
+      <p>Tell us about your project. Our team will reach out within 24 hours with a free consultation and a detailed quote.</p>
+      <div class="srv-cta-actions">
+        <a href="contact.html#enquiry" class="btn-primary gold large">Start Your Project</a>
+        <a href="tel:+917904090365" class="btn-outline-white large">📞 79040 90365</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════ FOOTER ══════════════════════ -->
+  <footer class="footer">
+    <div class="footer-top container">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="images/logo.png" alt="Ikon Constructions" class="footer-logo-img"
+               onerror="this.style.display='none'"/>
+        </div>
+        <p class="footer-tagline">Premium Living. Elevated.<br/>Building Chennai's finest homes since 2020.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Instagram" class="social-link">IG</a>
+          <a href="#" aria-label="Facebook"  class="social-link">FB</a>
+          <a href="#" aria-label="YouTube"   class="social-link">YT</a>
+          <a href="#" aria-label="WhatsApp"  class="social-link">WA</a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="careers.html">Careers</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+      <div class="footer-links">
+        <h4>Our Services</h4>
+        <a href="#individual">Individual Houses</a>
+        <a href="#apartments">Apartments</a>
+        <a href="#villas">Villas</a>
+        <a href="#commercial">Commercial</a>
+        <a href="#peb">PEB Construction</a>
+        <a href="#interior">Interior Design</a>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>📞 <a href="tel:+917904090365">79040 90365</a></p>
+        <p>🌐 <a href="http://www.ikonconstructions.com">www.ikonconstructions.com</a></p>
+        <p>📍 Near SRM Public School,<br/>Guduvancheri, Chennai</p>
+        <a href="contact.html#enquiry" class="btn-enquiry-footer">Enquire Now</a>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p>© 2025 Ikon Constructions. All rights reserved. | T&C apply. Price excludes registration/taxes.</p>
+      <p>Designed with ♥ for premium living</p>
+    </div>
+  </footer>
+
+  <a href="contact.html#enquiry" class="floating-enquiry" id="floatingEnquiry">
+    <span>Enquire Now</span>
+  </a>
+
+  <script src="script.js"></script>
+  <script src="services.js"></script>
+</body>
+</html>

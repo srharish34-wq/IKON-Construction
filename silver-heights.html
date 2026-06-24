@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Silver Heights – Premium Apartments | Ikon Constructions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="silver-heights.css"/>
+</head>
+<body>
+
+  <!-- ══════════════════════ HEADER ══════════════════════ -->
+  <header class="header scrolled" id="header">
+    <div class="header-inner container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Ikon Constructions" class="logo-img"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"/>
+        <div class="logo-fallback" style="display:none;align-items:center;gap:12px;">
+          <div class="logo-text">
+            <span class="logo-main">IKON</span>
+            <span class="logo-sub">CONSTRUCTIONS</span>
+          </div>
+        </div>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="index.html"    class="nav-link">Home</a>
+        <a href="about.html"    class="nav-link">About Us</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <div class="nav-dropdown">
+          <a href="projects.html" class="nav-link active">Projects <span class="caret">▾</span></a>
+          <div class="dropdown-menu">
+            <a href="silver-heights.html" style="color:var(--gold);font-weight:700">Silver Heights</a>
+            <a href="ongoing-projects.html">Ongoing Projects</a>
+            <a href="completed-projects.html">Completed Projects</a>
+          </div>
+        </div>
+        <a href="careers.html"  class="nav-link">Careers</a>
+        <a href="contact.html"  class="nav-link">Contact</a>
+        <a href="contact.html#enquiry" class="btn-enquiry">Enquire Now</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ══════════════════════ HERO ══════════════════════ -->
+  <section class="sh-hero">
+    <div class="sh-hero-bg">
+      <img src="images/silver-heights-hero.jpg" alt="Silver Heights"
+           id="shHeroBg" onerror="this.style.display='none'"/>
+      <div class="sh-hero-overlay"></div>
+      <div class="sh-particles">
+        <div class="sh-particle p1"></div>
+        <div class="sh-particle p2"></div>
+        <div class="sh-particle p3"></div>
+        <div class="sh-particle p4"></div>
+        <div class="sh-particle p5"></div>
+      </div>
+    </div>
+    <div class="sh-hero-content container">
+      <nav class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="bc-sep">›</span>
+        <a href="projects.html">Projects</a>
+        <span class="bc-sep">›</span>
+        <span>Silver Heights</span>
+      </nav>
+      <div class="sh-brand-badge">
+        <span class="sh-brand-icon">🏆</span>
+        <span>Flagship Project by Ikon Constructions</span>
+      </div>
+      <h1 class="sh-hero-title">
+        <span class="sh-title-silver">Silver</span>
+        <span class="sh-title-heights">Heights</span>
+      </h1>
+      <p class="sh-hero-tagline">Premium Living. <em>Elevated.</em></p>
+      <p class="sh-hero-sub">8 exclusive premium apartments in Guduvancheri — where smart technology meets architectural elegance. Limited units. Timeless living.</p>
+
+      <div class="sh-hero-highlights">
+        <div class="sh-hl-item">
+          <span class="sh-hl-num">8</span>
+          <span class="sh-hl-label">Premium Units</span>
+        </div>
+        <div class="sh-hl-sep"></div>
+        <div class="sh-hl-item">
+          <span class="sh-hl-num">₹58L*</span>
+          <span class="sh-hl-label">Starting Price</span>
+        </div>
+        <div class="sh-hl-sep"></div>
+        <div class="sh-hl-item">
+          <span class="sh-hl-num">2, 3 & 4</span>
+          <span class="sh-hl-label">BHK Options</span>
+        </div>
+        <div class="sh-hl-sep"></div>
+        <div class="sh-hl-item">
+          <span class="sh-hl-num">8+</span>
+          <span class="sh-hl-label">Smart Amenities</span>
+        </div>
+      </div>
+
+      <div class="sh-hero-cta">
+        <a href="#enquiry-section" class="btn-primary gold large sh-scroll-link">Book Site Visit</a>
+        <a href="tel:+917904090365" class="sh-call-btn">
+          <span class="sh-call-icon">📞</span>
+          <div>
+            <span class="sh-call-label">Call Now</span>
+            <span class="sh-call-num">79040 90365</span>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="sh-hero-units-badge">
+      <div class="sh-units-inner">
+        <span class="sh-units-num">8</span>
+        <span class="sh-units-text">PREMIUM<br/>UNITS ONLY</span>
+      </div>
+    </div>
+    <div class="sh-hero-scroll">
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════ QUICK INFO STRIP ══════════════════════ -->
+  <div class="sh-info-strip">
+    <div class="container sh-info-grid">
+      <div class="sh-info-item">
+        <span class="sh-info-icon">📍</span>
+        <div>
+          <span class="sh-info-label">Location</span>
+          <span class="sh-info-val">Guduvancheri, Chennai</span>
+        </div>
+      </div>
+      <div class="sh-info-div"></div>
+      <div class="sh-info-item">
+        <span class="sh-info-icon">🏠</span>
+        <div>
+          <span class="sh-info-label">Type</span>
+          <span class="sh-info-val">2 BHK, 3 BHK & 4 BHK</span>
+        </div>
+      </div>
+      <div class="sh-info-div"></div>
+      <div class="sh-info-item">
+        <span class="sh-info-icon">📐</span>
+        <div>
+          <span class="sh-info-label">Size Range</span>
+          <span class="sh-info-val">900 – 1,420 Sq.Ft</span>
+        </div>
+      </div>
+      <div class="sh-info-div"></div>
+      <div class="sh-info-item">
+        <span class="sh-info-icon">💰</span>
+        <div>
+          <span class="sh-info-label">Price</span>
+          <span class="sh-info-val">₹58 Lakhs* onwards</span>
+        </div>
+      </div>
+      <div class="sh-info-div"></div>
+      <div class="sh-info-item">
+        <span class="sh-info-icon">🔑</span>
+        <div>
+          <span class="sh-info-label">Status</span>
+          <span class="sh-info-val sh-status-live">● Units Available</span>
+        </div>
+      </div>
+      <div class="sh-info-div"></div>
+      <div class="sh-info-item">
+        <span class="sh-info-icon">🏗️</span>
+        <div>
+          <span class="sh-info-label">Builder</span>
+          <span class="sh-info-val">Ikon Constructions</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════ PROJECT OVERVIEW ══════════════════════ -->
+  <section class="sh-overview section-pad">
+    <div class="container sh-overview-grid">
+      <div class="sh-overview-images reveal-left">
+        <div class="sh-img-main-wrap">
+          <img src="images/silver-heights.jpg" alt="Silver Heights Building"
+               onerror="this.parentElement.classList.add('sh-img-fallback')"/>
+          <div class="sh-img-tag">Premium Residences</div>
+        </div>
+        <div class="sh-img-pair">
+          <div class="sh-img-small-wrap">
+            <img src="images/sh-exterior-1.jpg" alt="Silver Heights Exterior"
+                 onerror="this.parentElement.classList.add('sh-img-fallback-sm')"/>
+            <span class="sh-img-small-label">Exterior View</span>
+          </div>
+          <div class="sh-img-small-wrap">
+            <img src="images/sh-lobby.jpg" alt="Silver Heights Lobby"
+                 onerror="this.parentElement.classList.add('sh-img-fallback-sm')"/>
+            <span class="sh-img-small-label">Lobby</span>
+          </div>
+        </div>
+      </div>
+      <div class="sh-overview-content reveal-right">
+        <p class="section-eyebrow">About The Project</p>
+        <h2 class="section-title">A New Standard of <em>Premium Living</em></h2>
+        <p class="body-text">Silver Heights is Ikon Constructions' most prestigious residential development — a thoughtfully designed apartment complex in the heart of Guduvancheri, one of Chennai's fastest-growing residential corridors.</p>
+        <p class="body-text">With only 8 exclusive units across 2 BHK, 3 BHK, and 4 BHK configurations, Silver Heights offers an intimate, premium living experience that larger developments simply cannot provide. Every apartment is a masterpiece of space utilisation, natural lighting, and modern design.</p>
+        <p class="body-text">From smart home automation to solar water heating, EV charging to 24/7 security — every amenity has been carefully curated to elevate your daily life.</p>
+
+        <div class="sh-overview-stats">
+          <div class="sh-ov-stat">
+            <span class="sh-ov-num">G+3</span>
+            <span class="sh-ov-label">Floors</span>
+          </div>
+          <div class="sh-ov-stat">
+            <span class="sh-ov-num">8</span>
+            <span class="sh-ov-label">Units</span>
+          </div>
+          <div class="sh-ov-stat">
+            <span class="sh-ov-num">3</span>
+            <span class="sh-ov-label">Configurations</span>
+          </div>
+          <div class="sh-ov-stat">
+            <span class="sh-ov-num">8+</span>
+            <span class="sh-ov-label">Amenities</span>
+          </div>
+        </div>
+
+        <div class="sh-overview-cta">
+          <a href="#floor-plans" class="btn-primary sh-scroll-link">View Floor Plans</a>
+          <a href="#enquiry-section" class="btn-outline-navy sh-scroll-link">Enquire Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════ UNIT TYPES ══════════════════════ -->
+  <section class="sh-units section-pad bg-light" id="units">
+    <div class="container">
+      <div class="section-header center">
+        <p class="section-eyebrow">Unit Configurations</p>
+        <h2 class="section-title">Choose Your <em>Perfect Home</em></h2>
+        <p class="section-desc">Silver Heights offers three premium configurations — each thoughtfully designed to maximise space, light, and lifestyle comfort.</p>
+      </div>
+
+      <div class="unit-tabs">
+        <button class="unit-tab active" data-unit="2bhk">2 BHK</button>
+        <button class="unit-tab" data-unit="3bhk">3 BHK</button>
+        <button class="unit-tab" data-unit="4bhk">4 BHK</button>
+      </div>
+
+      <!-- ── 2 BHK ── -->
+      <div class="unit-panel active" id="panel-2bhk">
+        <div class="unit-grid">
+          <div class="unit-images reveal-left">
+            <div class="unit-img-tabs">
+              <button class="unit-img-tab active" data-img="sh-2bhk-view1.jpg">View 1</button>
+              <button class="unit-img-tab" data-img="sh-2bhk-view2.jpg">View 2</button>
+              <button class="unit-img-tab" data-img="sh-2bhk-layout.jpg">Layout</button>
+            </div>
+            <div class="unit-img-display">
+              <img src="images/sh-2bhk-view1.jpg" alt="2 BHK Unit"
+                   onerror="this.parentElement.classList.add('unit-img-fallback-2bhk')"/>
+              <div class="unit-img-badge">2 BHK</div>
+            </div>
+            <div class="unit-img-thumbs">
+              <div class="uth-item active" data-src="images/sh-2bhk-view1.jpg">
+                <img src="images/sh-2bhk-view1.jpg" alt="View 1" onerror="this.parentElement.style.background='#e0e0e0'"/>
+                <span>View 1</span>
+              </div>
+              <div class="uth-item" data-src="images/sh-2bhk-view2.jpg">
+                <img src="images/sh-2bhk-view2.jpg" alt="View 2" onerror="this.parentElement.style.background='#e0e0e0'"/>
+                <span>View 2</span>
+              </div>
+              <div class="uth-item" data-src="images/sh-2bhk-layout.jpg">
+                <img src="images/sh-2bhk-layout.jpg" alt="Layout" onerror="this.parentElement.style.background='#e0e0e0'"/>
+                <span>Layout</span>
+              </div>
+            </div>
+          </div>
+          <div class="unit-details reveal-right">
+            <div class="unit-type-badge">2 BHK</div>
+            <h3 class="unit-name">2 Bedroom Premium Apartment</h3>
+            <p class="unit-price">₹58 Lakhs* <span class="unit-price-note">onwards</span></p>
+            <div class="unit-specs-grid">
+              <div class="us-item"><span class="us-icon">📐</span><div><strong>Super Built-Up Area</strong><span>900 Sq.Ft</span></div></div>
+              <div class="us-item"><span class="us-icon">🛏️</span><div><strong>Bedrooms</strong><span>2 Bedrooms</span></div></div>
+              <div class="us-item"><span class="us-icon">🚿</span><div><strong>Bathrooms</strong><span>2 Attached Baths</span></div></div>
+              <div class="us-item"><span class="us-icon">🛋️</span><div><strong>Living & Dining</strong><span>Combined Open Plan</span></div></div>
+              <div class="us-item"><span class="us-icon">🍳</span><div><strong>Kitchen</strong><span>Modular Kitchen Ready</span></div></div>
+              <div class="us-item"><span class="us-icon">🌿</span><div><strong>Balcony</strong><span>1 Spacious Balcony</span></div></div>
+            </div>
+            <div class="unit-room-breakdown">
+              <h4>Room Breakdown</h4>
+              <div class="room-rows">
+                <div class="room-row"><span class="rr-name">Living / Dining</span><div class="rr-bar"><div class="rr-fill" style="--w:85%"></div></div><span class="rr-size">~240 sq.ft</span></div>
+                <div class="room-row"><span class="rr-name">Master Bedroom</span><div class="rr-bar"><div class="rr-fill" style="--w:70%"></div></div><span class="rr-size">~180 sq.ft</span></div>
+                <div class="room-row"><span class="rr-name">Bedroom 2</span><div class="rr-bar"><div class="rr-fill" style="--w:60%"></div></div><span class="rr-size">~150 sq.ft</span></div>
+                <div class="room-row"><span class="rr-name">Kitchen</span><div class="rr-bar"><div class="rr-fill" style="--w:40%"></div></div><span class="rr-size">~100 sq.ft</span></div>
+                <div class="room-row"><span class="rr-name">Balcony</span><div class="rr-bar"><div class="rr-fill" style="--w:30%"></div></div><span class="rr-size">~60 sq.ft</span></div>
+              </div>
+            </div>
+            <div class="unit-cta-row">
+              <a href="#enquiry-section" class="btn-primary gold sh-scroll-link">Book This Unit</a>
+              <a href="images/sh-2bhk-layout.jpg" class="btn-outline-navy" target="_blank">Download Layout</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── 3 BHK ── -->
+      <div class="unit-panel" id="panel-3bhk">
+        <div class="unit-grid">
+          <div class="unit-images reveal-left">
+            <div class="unit-img-tabs">
+              <button class="unit-img-tab active" data-img="sh-3bhk-view1.jpg">View 1</button>
+              <button class="unit-img-tab" data-img="sh-3bhk-view2.jpg">View 2</button>
+              <button class="unit-img-tab" data-img="sh-3bhk-layout.jpg">Layout</button>
+            </div>
+            <div class="unit-img-display">
+              <img src="images/sh-3bhk-view1.jpg" alt="3 BHK Unit"
+                   onerror="this.parentElement.classList.add('unit-img-fallback-3bhk')"/>
+              <div class="unit-img-badge gold">3 BHK</div>
+            </div>
+            <div class="unit-img-thumbs">
+              <div class="uth-item active" data-src="images/sh-3bhk-view1.jpg">
+                <img src="images/sh-3bhk-view1.jpg" alt="View 1" onerror="this.parentElement.style.background='#e0e0e0'"/>
+                <span>View 1</span>
+              </div>
+              <div class="uth-item" data-src="images/sh-3bhk-view2.jpg">
+                <img src="images/sh-3bhk-view2.jpg" alt="View 2" onerror="this.parentElement.style.background='#e0e0e0'"/>
+                <span>View 2</span>
+              </div>
+              <div class="uth-item" data-src="images/sh-3bhk-layout.jpg">
+                <img src="images/sh-3bhk-layout.jpg" alt="Layout" onerror="this.parentElement.style.background='#e0e0e0'"/>
+                <span>Layout</span>
+              </div>
+            </div>
+          </div>
+          <div class="unit-details reveal-right">
+            <div class="unit-type-badge gold-badge">3 BHK</div>
+            <h3 class="unit-name">3 Bedroom Luxury Apartment</h3>
+            <p class="unit-price">₹75 Lakhs* <span class="unit-price-note">onwards</span></p>
+            <div class="unit-specs-grid">
+              <div class="us-item"><span class="us-icon">📐</span><div><strong>Super Built-Up Area</strong><span>1,200 Sq.Ft</span></div></div>
+              <div class="us-item"><span class="us-icon">🛏️</span><div><strong>Bedrooms</strong><span>3 Bedrooms</span></div></div>
+              <div class="us-item"><span class="us-icon">🚿</span><div><strong>Bathrooms</strong><span>3 Attached Baths</span></div></div>
+              <div class="us-item"><span class="us-icon">🛋️</span><div><strong>Living & Dining</strong><span>Spacious Separate Zones</span></div></div>
+              <div class="us-item"><span class="us-icon">🍳</span><div><strong>Kitchen</strong><span>Premium Modular Kitchen</span></div></div>
+              <div class="us-item"><span class="us-icon">🌿</span><div><strong>Balconies</strong><span>2 Balconies</span></div></div>
+            </div>
+            <div class="unit-room-breakdown">
+              <h4>Room Breakdown</h4>
+              <div class="room-rows">
+                <div class="room-row"><span class="rr-name">Living / Dining</span><div class="rr-bar"><div class="rr-fill" style="--w:90%"></div></div><span class="rr-size">~320 sq.ft</span></div>
+                <div class="room-row"><span class="rr-name">Master Bedroom</span><div class="rr-bar"><div class="rr-fill" style="--w:75%"></div></div><span class="rr-size">~200 sq.ft</span></div>
+                <div class="room-row"><span class="rr-name">Bedroom 2</span><div class="rr-bar"><div class="rr-fill" style="--w:65%"></div></div><span class="rr-size">~170 sq.ft</span></div>
+                <div class="room-row"><span class="rr-name">Bedroom 3</span><div class="rr-bar"><div class="rr-fill" style="--w:58%"></div></div><span class="rr-size">~150 sq.ft</span></div>
+                <div class="room-row"><span class="rr-name">Kitchen</span><div class="rr-bar"><div class="rr-fill" style="--w:45%"></div></div><span class="rr-size">~120 sq.ft</span></div>
+                <div class="room-row"><span class="rr-name">Balconies</span><div class="rr-bar"><div class="rr-fill" style="--w:32%"></div></div><span class="rr-size">~110 sq.ft</span></div>
+              </div>
+            </div>
+            <div class="unit-cta-row">
+              <a href="#enquiry-section" class="btn-primary gold sh-scroll-link">Book This Unit</a>
+              <a href="images/sh-3bhk-layout.jpg" class="btn-outline-navy" target="_blank">Download Layout</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── 4 BHK ── -->
+      <div class="unit-panel" id="panel-4bhk">
+        <div class="unit-grid">
+          <div class="unit-images reveal-left">
+            <div class="unit-img-tabs">
+              <button class="unit-img-tab active" data-img="sh-4bhk-view1.jpg">View 1</button>
+              <button class="unit-img-tab" data-img="sh-4bhk-view2.jpg">View 2</button>
+              <button class="unit-img-tab" data-img="sh-4bhk-layout.jpg">Layout</button>
+            </div>
+            <div class="unit-img-display">
+              <img src="images/sh-4bhk-view1.jpg" alt="4 BHK Unit"
+                   onerror="this.parentElement.classList.add('unit-img-fallback-4bhk')"/>
+              <div class="unit-img-badge gold">4 BHK</div>
+            </div>
+            <div class="unit-img-thumbs">
+              <div class="uth-item active" data-src="images/sh-4bhk-view1.jpg">
+                <img src="images/sh-4bhk-view1.jpg" alt="View 1" onerror="this.parentElement.style.background='#e0e0e0'"/>
+                <span>View 1</span>
+              </div>
+              <div class="uth-item" data-src="images/sh-4bhk-view2.jpg">
+                <img src="images/sh-4bhk-view2.jpg" alt="View 2" onerror="this.parentElement.style.background='#e0e0e0'"/>
+                <span>View 2</span>
+              </div>
+              <div class="uth-item" data-src="images/sh-4bhk-layout.jpg">
+                <img src="images/sh-4bhk-layout.jpg" alt="Layout" onerror="this.parentElement.style.background='#e0e0e0'"/>
+                <span>Layout</span>
+              </div>
+            </div>
+          </div>
+          <div class="unit-details reveal-right">
+            <div class="unit-type-badge gold-badge">4 BHK</div>
+            <h3 class="unit-name">4 Bedroom Ultra-Luxury Apartment</h3>
+            <p class="unit-price">₹95 Lakhs* <span class="unit-price-note">onwards</span></p>
+            <div class="unit-specs-grid">
+              <div class="us-item"><span class="us-icon">📐</span><div><strong>Super Built-Up Area</strong><span>1,420 Sq.Ft</span></div></div>
+              <div class="us-item"><span class="us-icon">🛏️</span><div><strong>Bedrooms</strong><span>4 Bedrooms</span></div></div>
+              <div class="us-item"><span class="us-icon">🚿</span><div><strong>Bathrooms</strong><span>4 Attached Baths</span></div></div>
+              <div class="us-item"><span class="us-icon">🛋️</span><div><strong>Living & Dining</strong><span>Grand Separate Zones</span></div></div>
+              <div class="us-item"><span class="us-icon">🍳</span><div><strong>Kitchen</strong><span>Premium Modular Kitchen</span></div></div>
+              <div class="us-item"><span class="us-icon">🌿</span><div><strong>Balconies</strong><span>2 Private Balconies</span></div></div>
+            </div>
+            <div class="unit-room-breakdown">
+              <h4>Room Breakdown</h4>
+              <div class="room-rows">
+                <div class="room-row"><span class="rr-name">Living / Dining</span><div class="rr-bar"><div class="rr-fill" style="--w:95%"></div></div><span class="rr-size">~360 sq.ft</span></div>
+                <div class="room-row"><span class="rr-name">Master Bedroom</span><div class="rr-bar"><div class="rr-fill" style="--w:78%"></div></div><span class="rr-size">~220 sq.ft</span></div>
+                <div class="room-row"><span class="rr-name">Bedroom 2</span><div class="rr-bar"><div class="rr-fill" style="--w:65%"></div></div><span class="rr-size">~175 sq.ft</span></div>
+                <div class="room-row"><span class="rr-name">Bedroom 3</span><div class="rr-bar"><div class="rr-fill" style="--w:60%"></div></div><span class="rr-size">~160 sq.ft</span></div>
+                <div class="room-row"><span class="rr-name">Bedroom 4</span><div class="rr-bar"><div class="rr-fill" style="--w:55%"></div></div><span class="rr-size">~145 sq.ft</span></div>
+                <div class="room-row"><span class="rr-name">Kitchen</span><div class="rr-bar"><div class="rr-fill" style="--w:48%"></div></div><span class="rr-size">~130 sq.ft</span></div>
+              </div>
+            </div>
+            <div class="unit-cta-row">
+              <a href="#enquiry-section" class="btn-primary gold sh-scroll-link">Book This Unit</a>
+              <a href="images/sh-4bhk-layout.jpg" class="btn-outline-navy" target="_blank">Download Layout</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════ FLOOR PLANS ══════════════════════ -->
+  <section class="sh-layouts section-pad bg-navy" id="floor-plans">
+    <div class="container">
+      <div class="section-header center white">
+        <p class="section-eyebrow light">Floor Plans</p>
+        <h2 class="section-title white">Detailed <em>Layout Plans</em></h2>
+        <p class="section-desc white">Study the thoughtfully designed floor plans of Silver Heights — every square foot planned for maximum comfort and functionality.</p>
+      </div>
+
+      <div class="layout-tabs-wrap">
+        <div class="layout-tabs">
+          <button class="layout-tab active" data-layout="2bhk-layout">2 BHK Layout</button>
+          <button class="layout-tab" data-layout="3bhk-layout">3 BHK Layout</button>
+          <button class="layout-tab" data-layout="4bhk-layout">4 BHK Layout</button>
+          <button class="layout-tab" data-layout="site-plan">Site Plan</button>
+        </div>
+      </div>
+
+      <!-- 2BHK Layout -->
+      <div class="layout-panel active" id="layout-2bhk-layout">
+        <div class="layout-display-grid">
+          <div class="layout-img-wrap reveal-left">
+            <img src="images/sh-2bhk-layout.jpg" alt="2 BHK Floor Plan"
+                 onerror="this.parentElement.classList.add('layout-img-fallback')"/>
+            <button class="layout-zoom-btn" data-img="images/sh-2bhk-layout.jpg">🔍 View Full Size</button>
+          </div>
+          <div class="layout-info reveal-right">
+            <h3>2 BHK Floor Plan</h3>
+            <p class="layout-area">900 Sq.Ft Super Built-Up</p>
+            <div class="layout-rooms">
+              <div class="lr-item"><span class="lr-icon">🛋️</span><span class="lr-room">Living Room</span><span class="lr-size">~180 sq.ft</span></div>
+              <div class="lr-item"><span class="lr-icon">🍽️</span><span class="lr-room">Dining Area</span><span class="lr-size">~80 sq.ft</span></div>
+              <div class="lr-item"><span class="lr-icon">🛏️</span><span class="lr-room">Master Bedroom</span><span class="lr-size">~180 sq.ft</span></div>
+              <div class="lr-item"><span class="lr-icon">🛏️</span><span class="lr-room">Bedroom 2</span><span class="lr-size">~150 sq.ft</span></div>
+              <div class="lr-item"><span class="lr-icon">🚿</span><span class="lr-room">Master Bath</span><span class="lr-size">~50 sq.ft</span></div>
+              <div class="lr-item"><span class="lr-icon">🚿</span><span class="lr-room">Common Bath</span><span class="lr-size">~40 sq.ft</span></div>
+              <div class="lr-item"><span class="lr-icon">🍳</span><span class="lr-room">Kitchen</span><span class="lr-size">~100 sq.ft</span></div>
+              <div class="lr-item"><span class="lr-icon">🌿</span><span class="lr-room">Balcony</span><span class="lr-size">~60 sq.ft</span></div>
+            </div>
+            <a href="images/sh-2bhk-layout.jpg" download class="btn-primary" style="margin-top:24px;display:inline-block">⬇ Download Floor Plan</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3BHK Layout -->
+      <div class="layout-panel" id="layout-3bhk-layout">
+        <div class="layout-display-grid">
+          <div class="layout-img-wrap reveal-left">
+            <img src="images/sh-3bhk-layout.jpg" alt="3 BHK Floor Plan"
+                 onerror="this.parentElement.classList.add('layout-img-fallback')"/>
+            <button class="layout-zoom-btn" data-img="images/sh-3bhk-layout.jpg">🔍 View Full Size</button>
+          </div>
+          <div class="layout-info reveal-right">
+            <h3>3 BHK Floor Plan</h3>
+            <p class="layout-area">1,200 Sq.Ft Super Built-Up</p>
+            <div class="layout-rooms">
+              <div class="lr-item"><span class="lr-icon">🛋️</span><span class="lr-room">Living Room</span><span class="lr-size">~220 sq.ft</span></div>
+              <div class="lr-item"><span class="lr-icon">🍽️</span><span class="lr-room">Dining Area</span><span class="lr-size">~100 sq.ft</span></div>
+              <div class="lr-item"><span class="lr-icon">🛏️</span><span class="lr-room">Master Bedroom</span><span class="lr-size">~200 sq.ft</span></div>
+              <div class="lr-item"><span class="lr-icon">🛏️</span><span class="lr-room">Bedroom 2</span><span class="lr-size">~170 sq.ft</span></div>
+              <div class="lr-item"><span class="lr-icon">🛏️</span><span class="lr-room">Bedroom 3</span><span class="lr-size">~150 sq.ft</span></div>
+              <div class="lr-item"><span class="lr-icon">🍳</span><span class="lr-room">Kitchen</span><span class="lr-size">~120 sq.ft</span></div>
+              <div class="lr-item"><span class="lr-icon">🌿</span><span class="lr-room">Balcony 1</span><span class="lr-size">~60 sq.ft</span></div>
+              <div class="lr-item"><span class="lr-icon">🌿</span><span class="lr-room">Balcony 2</span><span class="lr-size">~50 sq.ft</span></div>
+            </div>
+            <a href="images/sh-3bhk-layout.jpg" download class="btn-primary" style="margin-top:24px;display:inline-block">⬇ Download Floor Plan</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4BHK Layout -->
+      <div class="layout-panel" id="layout-4bhk-layout">
+        <div class="layout-display-grid">
+          <div class="layout-img-wrap reveal-left">
+            <img src="images/sh-4bhk-layout.jpg" alt="4 BHK Floor Plan"
+                 onerror="this.parentElement.classList.add('layout-img-fallback')"/>
+            <button class="layout-zoom-btn" data-img="images/sh-4bhk-layout.jpg">🔍 View Full Size</button>
+          </div>
+          <div class="layout-info reveal-right">
+            <h3>4 BHK Floor Plan</h3>
+            <p class="layout-area">1,420 Sq.Ft Super Built-Up</p>
+            <div class="layout-rooms">
+              <div class="lr-item"><span class="lr-icon">🛋️</span><span class="lr-room">Living Room</span><span class="lr-size">~240 sq.ft</span></div>
+              <div class="lr-item"><span class="lr-icon">🍽️</span><span class="lr-room">Dining Area</span><span class="lr-size">~120 sq.ft</span></div>
+              <div class="lr-item"><span class="lr-icon">🛏️</span><span class="lr-room">Master Bedroom</span><span class="lr-size">~220 sq.ft</span></div>
+              <div class="lr-item"><span class="lr-icon">🛏️</span><span class="lr-room">Bedroom 2</span><span class="lr-size">~175 sq.ft</span></div>
+              <div class="lr-item"><span class="lr-icon">🛏️</span><span class="lr-room">Bedroom 3</span><span class="lr-size">~160 sq.ft</span></div>
+              <div class="lr-item"><span class="lr-icon">🛏️</span><span class="lr-room">Bedroom 4</span><span class="lr-size">~145 sq.ft</span></div>
+              <div class="lr-item"><span class="lr-icon">🍳</span><span class="lr-room">Kitchen</span><span class="lr-size">~130 sq.ft</span></div>
+              <div class="lr-item"><span class="lr-icon">🌿</span><span class="lr-room">Balcony 1</span><span class="lr-size">~65 sq.ft</span></div>
+              <div class="lr-item"><span class="lr-icon">🌿</span><span class="lr-room">Balcony 2</span><span class="lr-size">~55 sq.ft</span></div>
+            </div>
+            <a href="images/sh-4bhk-layout.jpg" download class="btn-primary" style="margin-top:24px;display:inline-block">⬇ Download Floor Plan</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Site Plan -->
+      <div class="layout-panel" id="layout-site-plan">
+        <div class="layout-display-grid">
+          <div class="layout-img-wrap reveal-left">
+            <img src="images/sh-site-plan.jpg" alt="Silver Heights Site Plan"
+                 onerror="this.parentElement.classList.add('layout-img-fallback')"/>
+            <button class="layout-zoom-btn" data-img="images/sh-site-plan.jpg">🔍 View Full Size</button>
+          </div>
+          <div class="layout-info reveal-right">
+            <h3>Site Plan Overview</h3>
+            <p class="layout-area">Complete Site Layout — Silver Heights</p>
+            <div class="layout-rooms">
+              <div class="lr-item"><span class="lr-icon">🅿️</span><span class="lr-room">Covered Parking</span><span class="lr-size">Ground Floor</span></div>
+              <div class="lr-item"><span class="lr-icon">🛗</span><span class="lr-room">Lift Lobby</span><span class="lr-size">All Floors</span></div>
+              <div class="lr-item"><span class="lr-icon">🏋️</span><span class="lr-room">Common Amenity Area</span><span class="lr-size">Ground Floor</span></div>
+              <div class="lr-item"><span class="lr-icon">🌿</span><span class="lr-room">Landscaped Entry</span><span class="lr-size">Entrance</span></div>
+              <div class="lr-item"><span class="lr-icon">🔌</span><span class="lr-room">EV Charging Bays</span><span class="lr-size">Basement/Ground</span></div>
+              <div class="lr-item"><span class="lr-icon">☀️</span><span class="lr-room">Solar Panels</span><span class="lr-size">Rooftop</span></div>
+            </div>
+            <a href="images/sh-site-plan.jpg" download class="btn-primary" style="margin-top:24px;display:inline-block">⬇ Download Site Plan</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════ AMENITIES ══════════════════════ -->
+  <section class="sh-amenities section-pad" id="amenities">
+    <div class="container">
+      <div class="section-header center">
+        <p class="section-eyebrow">What's Included</p>
+        <h2 class="section-title">World-Class <em>Amenities</em></h2>
+        <p class="section-desc">Every amenity at Silver Heights has been selected to enhance your comfort, security, and lifestyle — day and night.</p>
+      </div>
+      <div class="amenities-showcase reveal-up">
+        <div class="am-card featured-am">
+          <div class="am-icon">🏠</div>
+          <h4>Smart Home with Security</h4>
+          <p>App-controlled entry, smart locks, automated lighting systems and integrated security alerts — all from your smartphone.</p>
+          <div class="am-tag">Featured</div>
+        </div>
+        <div class="am-card">
+          <div class="am-icon">☀️</div>
+          <h4>Solar Water Heater</h4>
+          <p>24/7 hot water powered by solar energy — eco-friendly and cost-saving, included in every unit as standard.</p>
+        </div>
+        <div class="am-card">
+          <div class="am-icon">⚡</div>
+          <h4>Power Backup</h4>
+          <p>Generator-backed power supply for all common areas and critical systems. No more dark moments during power cuts.</p>
+        </div>
+        <div class="am-card">
+          <div class="am-icon">🚗</div>
+          <h4>Covered Car Parking</h4>
+          <p>Dedicated covered parking bay for every unit — shaded, safe, and right below your home.</p>
+        </div>
+        <div class="am-card">
+          <div class="am-icon">🛗</div>
+          <h4>Lift Access</h4>
+          <p>Smooth, spacious passenger lift with stainless steel interiors serving all floors of Silver Heights.</p>
+        </div>
+        <div class="am-card">
+          <div class="am-icon">📷</div>
+          <h4>CCTV Surveillance</h4>
+          <p>Comprehensive camera coverage at all entry points, parking areas, lobbies, and corridors — monitored 24/7.</p>
+        </div>
+        <div class="am-card featured-am">
+          <div class="am-icon">🔌</div>
+          <h4>EV Charging Point</h4>
+          <p>Future-ready electric vehicle charging stations — because we build for the decade ahead, not just today.</p>
+          <div class="am-tag">Future Ready</div>
+        </div>
+        <div class="am-card">
+          <div class="am-icon">🔧</div>
+          <h4>24/7 Service Connection</h4>
+          <p>Round-the-clock maintenance support and a dedicated helpline for all residents of Silver Heights.</p>
+        </div>
+        <div class="am-card">
+          <div class="am-icon">🌿</div>
+          <h4>Landscaped Garden</h4>
+          <p>Beautifully landscaped entrance and garden areas to welcome you home every day with greenery and calm.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════ GALLERY ══════════════════════ -->
+  <section class="sh-gallery section-pad bg-light" id="gallery">
+    <div class="container">
+      <div class="section-header center">
+        <p class="section-eyebrow">Photo Gallery</p>
+        <h2 class="section-title">See Silver Heights <em>In Detail</em></h2>
+      </div>
+      <div class="gallery-filter reveal-up">
+        <button class="gf-btn active" data-filter="all">All</button>
+        <button class="gf-btn" data-filter="exterior">Exterior</button>
+        <button class="gf-btn" data-filter="interior">Interior</button>
+        <button class="gf-btn" data-filter="layout">Floor Plans</button>
+        <button class="gf-btn" data-filter="amenities">Amenities</button>
+      </div>
+      <div class="gallery-masonry reveal-up" id="galleryGrid">
+        <div class="gal-item" data-cat="exterior">
+          <img src="images/silver-heights.jpg" alt="Silver Heights Building" onerror="this.parentElement.style.background='#1a3a6e'"/>
+          <div class="gal-overlay"><span>🔍</span><p>Main Building</p></div>
+        </div>
+        <div class="gal-item tall" data-cat="exterior">
+          <img src="images/sh-exterior-1.jpg" alt="Exterior View" onerror="this.parentElement.style.background='#0A1931'"/>
+          <div class="gal-overlay"><span>🔍</span><p>Side Elevation</p></div>
+        </div>
+        <div class="gal-item" data-cat="interior">
+          <img src="images/sh-2bhk-view1.jpg" alt="2BHK Living Room" onerror="this.parentElement.style.background='#2c1654'"/>
+          <div class="gal-overlay"><span>🔍</span><p>2BHK Living Area</p></div>
+        </div>
+        <div class="gal-item" data-cat="interior">
+          <img src="images/sh-2bhk-view2.jpg" alt="2BHK Bedroom" onerror="this.parentElement.style.background='#1a3a6e'"/>
+          <div class="gal-overlay"><span>🔍</span><p>2BHK Bedroom</p></div>
+        </div>
+        <div class="gal-item tall" data-cat="interior">
+          <img src="images/sh-3bhk-view1.jpg" alt="3BHK Living Room" onerror="this.parentElement.style.background='#0A1931'"/>
+          <div class="gal-overlay"><span>🔍</span><p>3BHK Living Room</p></div>
+        </div>
+        <div class="gal-item" data-cat="interior">
+          <img src="images/sh-3bhk-view2.jpg" alt="3BHK Bedroom" onerror="this.parentElement.style.background='#2c1654'"/>
+          <div class="gal-overlay"><span>🔍</span><p>3BHK Master Bedroom</p></div>
+        </div>
+        <div class="gal-item" data-cat="interior">
+          <img src="images/sh-4bhk-view1.jpg" alt="4BHK Living Room" onerror="this.parentElement.style.background='#1a4a2e'"/>
+          <div class="gal-overlay"><span>🔍</span><p>4BHK Living Room</p></div>
+        </div>
+        <div class="gal-item" data-cat="interior">
+          <img src="images/sh-4bhk-view2.jpg" alt="4BHK Bedroom" onerror="this.parentElement.style.background='#0A1931'"/>
+          <div class="gal-overlay"><span>🔍</span><p>4BHK Master Bedroom</p></div>
+        </div>
+        <div class="gal-item" data-cat="layout">
+          <img src="images/sh-2bhk-layout.jpg" alt="2BHK Floor Plan" onerror="this.parentElement.style.background='#f0f0f0'"/>
+          <div class="gal-overlay"><span>🔍</span><p>2 BHK Floor Plan</p></div>
+        </div>
+        <div class="gal-item" data-cat="layout">
+          <img src="images/sh-3bhk-layout.jpg" alt="3BHK Floor Plan" onerror="this.parentElement.style.background='#f0f0f0'"/>
+          <div class="gal-overlay"><span>🔍</span><p>3 BHK Floor Plan</p></div>
+        </div>
+        <div class="gal-item" data-cat="layout">
+          <img src="images/sh-4bhk-layout.jpg" alt="4BHK Floor Plan" onerror="this.parentElement.style.background='#f0f0f0'"/>
+          <div class="gal-overlay"><span>🔍</span><p>4 BHK Floor Plan</p></div>
+        </div>
+        <div class="gal-item" data-cat="amenities">
+          <img src="images/sh-lobby.jpg" alt="Lobby" onerror="this.parentElement.style.background='#1a3a6e'"/>
+          <div class="gal-overlay"><span>🔍</span><p>Grand Lobby</p></div>
+        </div>
+        <div class="gal-item" data-cat="amenities">
+          <img src="images/sh-parking.jpg" alt="Parking" onerror="this.parentElement.style.background='#0A1931'"/>
+          <div class="gal-overlay"><span>🔍</span><p>Covered Parking</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="sh-lightbox" id="shLightbox">
+    <div class="lb-backdrop" id="lbBackdrop"></div>
+    <div class="lb-content">
+      <button class="lb-close" id="lbClose">✕</button>
+      <button class="lb-prev" id="lbPrev">‹</button>
+      <img src="" alt="Gallery" id="lbImg"/>
+      <button class="lb-next" id="lbNext">›</button>
+      <div class="lb-caption" id="lbCaption"></div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════ LOCATION ══════════════════════ -->
+  <section class="sh-location section-pad">
+    <div class="container sh-location-grid">
+      <div class="sh-loc-content reveal-left">
+        <p class="section-eyebrow">Location</p>
+        <h2 class="section-title">Perfectly Located in <em>Guduvancheri</em></h2>
+        <p class="body-text">Silver Heights sits in the rapidly developing Guduvancheri corridor — one of Chennai's most desirable residential addresses. Exceptional connectivity to the city, surrounded by excellent schools, hospitals, and retail.</p>
+        <div class="sh-loc-perks">
+          <div class="sh-loc-perk"><span>🏫</span><div><strong>Near SRM Public School</strong><span>Walking distance</span></div></div>
+          <div class="sh-loc-perk"><span>🚉</span><div><strong>Guduvancheri Railway Station</strong><span>5 minutes drive</span></div></div>
+          <div class="sh-loc-perk"><span>🛣️</span><div><strong>GST Road / NH-44</strong><span>Direct access</span></div></div>
+          <div class="sh-loc-perk"><span>🏥</span><div><strong>Hospitals & Clinics</strong><span>Within 5 km radius</span></div></div>
+          <div class="sh-loc-perk"><span>🛒</span><div><strong>Shopping Centres</strong><span>Nearby malls & markets</span></div></div>
+          <div class="sh-loc-perk"><span>💼</span><div><strong>OMR IT Corridor</strong><span>20 minutes drive</span></div></div>
+        </div>
+        <a href="https://maps.google.com/?q=Guduvancheri,Chennai" target="_blank" class="btn-primary" style="margin-top:8px">📍 Open in Google Maps</a>
+      </div>
+      <div class="sh-loc-map reveal-right">
+        <div class="sh-map-card">
+          <div class="sh-map-visual">
+            <div class="sh-map-pin">
+              <div class="sh-pin-pulse"></div>
+              <div class="sh-pin-dot">📍</div>
+              <div class="sh-pin-label">Silver Heights<br/>Guduvancheri</div>
+            </div>
+            <div class="dist-badge db1">SRM School<br/>2 min walk</div>
+            <div class="dist-badge db2">Railway Stn<br/>5 min drive</div>
+            <div class="dist-badge db3">OMR IT Hub<br/>20 min drive</div>
+          </div>
+          <div class="sh-map-address">
+            <strong>Silver Heights</strong>
+            <span>Near SRM Public School, Guduvancheri,<br/>Chennai, Tamil Nadu — 603202</span>
+            <span class="sh-map-phone">📞 79040 90365</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════ ENQUIRY FORM ══════════════════════ -->
+  <section class="sh-enquiry section-pad bg-navy" id="enquiry-section">
+    <div class="container sh-enquiry-grid">
+      <div class="sh-enquiry-left reveal-left">
+        <p class="section-eyebrow light">Limited Units Available</p>
+        <h2 class="section-title white">Book Your Unit at <em>Silver Heights</em></h2>
+        <p class="body-text" style="color:rgba(255,255,255,0.7)">Fill the form and our team will contact you within 2 hours to schedule a site visit, share detailed brochures, and answer all your questions.</p>
+        <div class="sh-eq-highlights">
+          <div class="sh-eq-hl"><span>✓</span><span>Free site visit arranged</span></div>
+          <div class="sh-eq-hl"><span>✓</span><span>Detailed brochure emailed</span></div>
+          <div class="sh-eq-hl"><span>✓</span><span>No obligation — just explore</span></div>
+          <div class="sh-eq-hl"><span>✓</span><span>Home loan assistance offered</span></div>
+        </div>
+        <div class="sh-eq-contact">
+          <a href="tel:+917904090365" class="sh-eq-call">
+            <span>📞</span>
+            <div><strong>79040 90365</strong><span>Call us directly</span></div>
+          </a>
+          <a href="https://wa.me/917904090365" class="sh-eq-wa" target="_blank">
+            <span>💬</span>
+            <div><strong>WhatsApp Us</strong><span>Quick response</span></div>
+          </a>
+        </div>
+      </div>
+      <div class="sh-enquiry-form reveal-right">
+        <div class="enquiry-form-card">
+          <h3>Get a Free Callback</h3>
+          <p>Our team responds within 2 hours</p>
+          <div class="enquiry-form" id="enquiryForm">
+            <div class="form-group">
+              <label>Full Name *</label>
+              <input type="text" id="eq-name" placeholder="Your full name" required/>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Phone Number *</label>
+                <input type="tel" id="eq-phone" placeholder="+91 XXXXX XXXXX" required/>
+              </div>
+              <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" id="eq-email" placeholder="your@email.com"/>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Interested In</label>
+              <div class="interest-options">
+                <label class="interest-opt"><input type="radio" name="unit-type" value="2bhk" checked/><span>2 BHK</span></label>
+                <label class="interest-opt"><input type="radio" name="unit-type" value="3bhk"/><span>3 BHK</span></label>
+                <label class="interest-opt"><input type="radio" name="unit-type" value="4bhk"/><span>4 BHK</span></label>
+                <label class="interest-opt"><input type="radio" name="unit-type" value="both"/><span>Not Sure</span></label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Preferred Visit Date</label>
+              <input type="date" id="eq-date"/>
+            </div>
+            <div class="form-group">
+              <label>Message (Optional)</label>
+              <textarea id="eq-message" rows="3" placeholder="Any specific requirements or questions..."></textarea>
+            </div>
+            <button type="button" class="btn-primary gold" style="width:100%;padding:16px;font-size:15px" id="submitEnquiry">
+              🏠 Book My Site Visit
+            </button>
+            <p class="form-note">* Registration charges are additional and borne by the client. Price subject to change without prior notice.</p>
+          </div>
+          <div class="form-success" id="formSuccess" style="display:none">
+            <div class="success-icon">✅</div>
+            <h4>Thank You!</h4>
+            <p>Your enquiry has been received. Our team will call you within 2 hours to schedule your site visit.</p>
+            <a href="tel:+917904090365" class="btn-primary" style="display:inline-block;margin-top:16px">Call Now: 79040 90365</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════ FOOTER ══════════════════════ -->
+  <footer class="footer">
+    <div class="footer-top container">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="images/logo.png" alt="Ikon Constructions" class="footer-logo-img" onerror="this.style.display='none'"/>
+        </div>
+        <p class="footer-tagline">Premium Living. Elevated.<br/>Building Chennai's finest homes since 2020.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-link">IG</a>
+          <a href="#" class="social-link">FB</a>
+          <a href="#" class="social-link">YT</a>
+          <a href="#" class="social-link">WA</a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="careers.html">Careers</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+      <div class="footer-links">
+        <h4>Silver Heights</h4>
+        <a href="#units">Unit Types</a>
+        <a href="#floor-plans">Floor Plans</a>
+        <a href="#amenities">Amenities</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#enquiry-section">Book Site Visit</a>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>📞 <a href="tel:+917904090365">79040 90365</a></p>
+        <p>🌐 <a href="http://www.ikonconstructions.com">www.ikonconstructions.com</a></p>
+        <p>📍 Near SRM Public School,<br/>Guduvancheri, Chennai</p>
+        <a href="#enquiry-section" class="btn-enquiry-footer sh-scroll-link">Book Site Visit</a>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p>© 2025 Ikon Constructions. All rights reserved. | *T&C apply. Price excludes registration/taxes.</p>
+      <p>Designed with ♥ for premium living</p>
+    </div>
+  </footer>
+
+  <a href="#enquiry-section" class="floating-enquiry sh-scroll-link" id="floatingEnquiry">
+    <span>Book Site Visit</span>
+  </a>
+
+  <script src="script.js"></script>
+  <script src="silver-heights.js"></script>
+</body>
+</html>
